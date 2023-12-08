@@ -1,3 +1,15 @@
+.site-head {
+    text-align: center;
+}
+
+.nav-style {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 .gamegrid {
     display: flex;
     flex-direction: column;
