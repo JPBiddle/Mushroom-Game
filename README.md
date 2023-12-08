@@ -12,7 +12,29 @@ This was the second Milestone Projects as part of my course at the Code Institut
 
 ## UX
 
-### Main aims
+### Ideal Users
+
+The aim for me is to create a website that appeals to:
+
+- New users
+- Current users
+
+### User Stories
+#### New Users 
+
+- As a new user, I want to find instructions on how to use the site easily.
+- As a new user, I want the game to be engaging, beautifully designed and visually attractive.
+- As a new user, I want to be able to navigate through the website easily.
+
+#### Current Users
+
+- As a current user, I want to be able to see my score from the game I just played at least.
+- As a current user, I want to be able to play the game more than once and have a different experience the second time.
+- As a current user, I want to have the option of playing the game with different difficulty settings.
+
+### Development Planes
+
+
 
 
 
