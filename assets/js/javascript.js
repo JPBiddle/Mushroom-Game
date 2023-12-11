@@ -21,7 +21,7 @@ function newgame() {
     });
 }
 
-
+//Remove current array of mushrooms and generates new using newgame function// 
 function reset() {
     const icons = document.getElementsByClassName("icon");
     while (icons.length > 0) icons[0].remove();
