@@ -10,6 +10,8 @@ function newgame() {
     //Randomise array of icons//
     mushrooms.sort(function () { return 0.5 - Math.random(); });
 
+
+    //Create div to hold images//
     const gamegrid = document.createElement('div');
     gamegrid.className = "gamegrid";
     document.body.appendChild(gamegrid);

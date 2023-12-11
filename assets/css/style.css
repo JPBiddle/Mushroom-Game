@@ -38,11 +38,8 @@ body {
     margin: auto;
 }
 
-.icon {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.gamegrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 10vw);
 }
