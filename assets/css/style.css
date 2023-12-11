@@ -1,7 +1,6 @@
 body {
     background-image: url(/assets/images/background_spring.webp);
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .site-head {
@@ -37,4 +36,13 @@ body {
     padding: 0;
     border: 0;
     margin: auto;
+}
+
+.icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

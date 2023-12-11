@@ -10,20 +10,25 @@ function newgame() {
     //Randomise array of icons//
     mushrooms.sort(function () { return 0.5 - Math.random(); });
 
+    const gamegrid = document.createElement('div');
+    gamegrid.className = "gamegrid";
+    document.body.appendChild(gamegrid);
+
     //Push images into body//
     mushrooms.forEach(function (mushroom) {
-        var img = document.createElement('img');
+        const img = document.createElement('img');
         img.src = mushroom;
         img.height = "100";
         img.width = "100";
         img.className = "icon";
-        document.body.appendChild(img);
+        gamegrid.appendChild(img);
     });
+    
 }
 
 //Remove current array of mushrooms and generates new using newgame function// 
 function reset() {
-    const icons = document.getElementsByClassName("icon");
+    const icons = document.getElementsByClassName("gamegrid");
     while (icons.length > 0) icons[0].remove();
     newgame();
 }
