@@ -40,6 +40,20 @@ body {
 
 .gamegrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 10vw);
+    grid-template-columns: repeat(4, 7em);
+    grid-template-rows: repeat(4, 7em);
+}
+
+.icon {
+    background-color: black;
+    filter: contrast(0);
+    border-radius: 15px;
+    opacity: 0.5;
+}
+
+.iconafter {
+    background-color: none;
+    filter: none;
+    border-radius: 15px;
+    opacity: 1.0;
 }

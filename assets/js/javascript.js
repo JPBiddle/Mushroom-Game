@@ -1,5 +1,3 @@
-
-
 //Array of mushrooms with two of each icon//
 function newgame() {
     var mushrooms = ["/assets/images/mushroom_001.png", "/assets/images/mushroom_001.png", "/assets/images/mushroom_002.png", "/assets/images/mushroom_002.png",
@@ -9,7 +7,6 @@ function newgame() {
 
     //Randomise array of icons//
     mushrooms.sort(function () { return 0.5 - Math.random(); });
-
 
     //Create div to hold images//
     const gamegrid = document.createElement('div');
@@ -23,14 +20,27 @@ function newgame() {
         img.height = "100";
         img.width = "100";
         img.className = "icon";
+        img.addEventListener("click", reveals);
         gamegrid.appendChild(img);
+        return;
     });
-    
-}
+
+};
+
 
 //Remove current array of mushrooms and generates new using newgame function// 
 function reset() {
     const icons = document.getElementsByClassName("gamegrid");
-    while (icons.length > 0) icons[0].remove();
+    while (icons.length > 0) {
+        icons[0].remove();
+    };
     newgame();
+    return;
+}
+
+//Function to change class of icons to reveal them//
+//Thank you tutor Joanne for helping me solve this problem//
+function reveals() {
+    this.classList.add('iconafter');
+    this.classList.remove('icon');
 }
