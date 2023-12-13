@@ -26,38 +26,50 @@ function newgame() {
     });
 
     //flip icon when clicked//
+    // let beenClicked = false;
+    // let firstClicked, secondClicked;
     let beenClicked = false;
-    let firstClicked, secondClicked;
-
+    let firstClicked = [];
+    let secondClicked = [];
     function flipCard() {
         this.classList.toggle("revealed");
         this.classList.add("revealed");
         this.classList.remove("icon");
-        let cards = document.getElementsByClassName("revealed");
 
         if (!beenClicked) {
             beenClicked = true;
             firstClicked = this;
-            noclick();
             return;
         }
+
         secondClicked = this;
         beenClicked = false;
-
+        console.log(secondClicked);
         checkForMatch();
     }
+    //Function to check for a match//
     function checkForMatch() {
-        if (firstClicked.src === secondClicked.src) {
+        if (firstClicked === secondClicked) {
             noClick();
             return;
         }
-        function noClick() {
-            firstClicked.removeEventListener('click', flipCard);
-            secondClicked.removeEventListener('click', flipCard);
+        unreveal();
+
+        function unreveal() {
+            setTimeout(() => {
+                firstClicked.classList.remove("revealed");
+                firstClicked.classList.add("icon");
+                secondClicked.classList.remove("revealed");
+                secondClicked.classList.add("icon");
+            }, 1000);
         }
     }
+    //Function to remove click after clicked//
+    function noClick() {
+        firstClicked.removeEventListener('click', flipCard);
+        secondClicked.removeEventListener('click', flipCard);
+    }
 };
-
 
 
 //Remove current array of mushrooms and generates new using newgame function// 
