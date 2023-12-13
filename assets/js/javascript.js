@@ -17,8 +17,8 @@ function newgame() {
     mushrooms.forEach(function (mushroom) {
         const img = document.createElement('img');
         img.src = mushroom;
-        img.height = "100";
-        img.width = "100";
+        img.height = "110";
+        img.width = "110";
         img.className = "icon";
         img.addEventListener("click", reveals);
         gamegrid.appendChild(img);
@@ -38,9 +38,26 @@ function reset() {
     return;
 }
 
-//Function to change class of icons to reveal them//
+//Function to change class of icons to reveal them//s
 //Thank you tutor Joanne for helping me solve this problem//
 function reveals() {
-    this.classList.add('iconafter');
-    this.classList.remove('icon');
+    this.classList.add("revealed");
+    this.classList.remove("icon");
+    setTimeout(() => {
+        this.classList.remove("revealed");
+        this.classList.add("icon");
+    }, 1000);
 }
+
+//Reset if not matched//
+// function match() {
+//     setTimeout(function () {
+//         if (document.getElementsByClassName("revealed").length > 1) {
+//             if (document.getElementsByClassName("revealed")[0].innerHTML ==
+//                 document.getElementsByClassName("revealed")[1].innerHTML) {
+//                 document.getElementsByClassName("revealed")[0].this.classList.remove("icon");
+//                 document.getElementsByClassName("revealed")[1].this.classList.remove("icon");
+//             };
+//         }
+//     }, 500);
+// }

@@ -30,8 +30,6 @@ body {
 
 .box {
     display: flex;
-    width: 100px;
-    height: 100px;
     background-color: black;
     padding: 0;
     border: 0;
@@ -48,12 +46,15 @@ body {
     background-color: black;
     filter: contrast(0);
     border-radius: 15px;
-    opacity: 0.5;
+    opacity: 0.3;
+    transition: 0.3s;
 }
 
-.iconafter {
+.revealed {
+    transform: rotateY(180deg);
     background-color: none;
     filter: none;
     border-radius: 15px;
     opacity: 1.0;
+    transition: 0.3s;
 }
