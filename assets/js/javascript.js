@@ -20,12 +20,44 @@ function newgame() {
         img.height = "110";
         img.width = "110";
         img.className = "icon";
-        img.addEventListener("click", revealmatch);
+        img.addEventListener("click", flipCard);
         gamegrid.appendChild(img);
         return;
     });
 
+    //flip icon when clicked//
+    // const flip = document.getElementsByClassName("icon");
+
+    let beenClicked = false;
+    let firstClicked, secondClicked;
+
+    function flipCard() {
+        this.classList.toggle("revealed");
+        this.classList.add("revealed");
+        this.classList.remove("icon");
+
+        if (!beenClicked) {
+            hasBeenClicked = true;
+            firstClicked = this;
+            return;
+        }
+        secondClicked = this;
+        hasBeenClicked = false;
+
+        checkForMatch();
+    }
+    function checkForMatch() {
+        if (firstClicked.src === secondClicked.src) {
+            noClick();
+            return;
+        }
+        function noClick() {
+            firstClicked.removeEventListener('click', flipCard);
+            secondClicked.removeEventListener('click', flipCard);
+        }
+    }
 };
+
 
 
 //Remove current array of mushrooms and generates new using newgame function// 
@@ -38,53 +70,53 @@ function reset() {
     return;
 }
 
-//Function to change class of icons to reveal them//s
-//Thank you tutor Joanne for helping me solve this problem//
-function reveals(classList) {
-    classList.add("revealed");
-    classList.remove("icon");
-    setTimeout(() => {
-        classList.remove("revealed");
-        classList.add("icon");
-    }, 1000);
-}
+// //Function to change class of icons to reveal them//s
+// //Thank you tutor Joanne for helping me solve this problem//
+// function reveals(classList) {
+//     classList.add("revealed");
+//     classList.remove("icon");
+//     setTimeout(() => {
+//         classList.remove("revealed");
+//         classList.add("icon");
+//     }, 1000);
+// }
 
-//Reset if not matched//
-function match() {
-    setTimeout(function () {
-        let cards = document.getElementsByClassName("revealed");
-        if (cards.length === 2 && cards[0].src === cards[1].src) {
-            cards[0].classList.add("matched");
-            cards[0].classList.remove("revealed, icon");
-            cards[1].classList.add("matched");
-            cards[1].classList.remove("revealed");
-            console.log("this is a match");
-        } else {
-            if (cards.length > 0) {
-                cards[0].classList.remove("icon");
-                cards[0].classList.add("revealed");
-            } else if (cards.length === 2) {
-                cards[1].classList.add("icon");
-                cards[1].classList.remove("revealed");
-            }
-            console.log(cards.length);
-
-
-        }
-
-        // if (document.getElementsByClassName("revealed").length > 1) {
-        //     if (document.getElementsByClassName("revealed")[0].innerHTML ==
-        //         document.getElementsByClassName("revealed")[1].innerHTML) {
-        //             document.getElementsByClassName("revealed")[0].this.classList.remove("icon");
-        //             document.getElementsByClassName("revealed")[1].this.classList.remove("icon");
-        //         };
-        //     }
-    }, 1000);
-}
-
-function revealmatch() {
-    reveals(this.classList);
-    match();
+// //Reset if not matched//
+// function match() {
+//     setTimeout(function () {
+//         let cards = document.getElementsByClassName("revealed");
+//         if (cards.length === 2 && cards[0].src === cards[1].src) {
+//             cards[0].classList.add("matched");
+//             cards[0].classList.remove("revealed, icon");
+//             cards[1].classList.add("matched");
+//             cards[1].classList.remove("revealed");
+//             console.log("this is a match");
+//         } else {
+//             if (cards.length > 0) {
+//                 cards[0].classList.remove("icon");
+//                 cards[0].classList.add("revealed");
+//             } else if (cards.length === 2) {
+//                 cards[1].classList.add("icon");
+//                 cards[1].classList.remove("revealed");
+//             }
+//             console.log(cards.length);
 
 
-}
+//         }
+
+// if (document.getElementsByClassName("revealed").length > 1) {
+//     if (document.getElementsByClassName("revealed")[0].innerHTML ==
+//         document.getElementsByClassName("revealed")[1].innerHTML) {
+//             document.getElementsByClassName("revealed")[0].this.classList.remove("icon");
+//             document.getElementsByClassName("revealed")[1].this.classList.remove("icon");
+//         };
+//     }
+//     }, 1000);
+// }
+
+// function revealmatch() {
+//     reveals(this.classList);
+//     match();
+
+
+// }
