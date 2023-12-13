@@ -29,27 +29,33 @@ function newgame() {
     // let beenClicked = false;
     // let firstClicked, secondClicked;
     let beenClicked = false;
-    let firstClicked = [];
-    let secondClicked = [];
+    let firstClicked = ``;
+    let secondClicked = ``;
     function flipCard() {
+        this.classList.remove("icon");
         this.classList.toggle("revealed");
         this.classList.add("revealed");
-        this.classList.remove("icon");
+
 
         if (!beenClicked) {
             beenClicked = true;
             firstClicked = this;
+            console.log(firstClicked);
+            return;
+        } else {
+
+            secondClicked = this;
+            beenClicked = false;
+            console.log(secondClicked);
+            checkForMatch();
             return;
         }
-
-        secondClicked = this;
-        beenClicked = false;
-        console.log(secondClicked);
-        checkForMatch();
     }
     //Function to check for a match//
     function checkForMatch() {
-        if (firstClicked === secondClicked) {
+        let firstClickedData = firstClicked.src;
+        let secondClickedData = secondClicked.src;
+        if (firstClickedData === secondClickedData) {
             noClick();
             return;
         }
