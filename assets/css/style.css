@@ -50,7 +50,8 @@ body {
     transition: 0.3s;
 }
 
-.revealed {
+.revealed,
+.matched {
     transform: rotateY(180deg);
     background-color: none;
     filter: none;

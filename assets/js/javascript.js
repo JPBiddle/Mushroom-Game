@@ -20,7 +20,7 @@ function newgame() {
         img.height = "110";
         img.width = "110";
         img.className = "icon";
-        img.addEventListener("click", reveals);
+        img.addEventListener("click", revealmatch);
         gamegrid.appendChild(img);
         return;
     });
@@ -40,24 +40,51 @@ function reset() {
 
 //Function to change class of icons to reveal them//s
 //Thank you tutor Joanne for helping me solve this problem//
-function reveals() {
-    this.classList.add("revealed");
-    this.classList.remove("icon");
+function reveals(classList) {
+    classList.add("revealed");
+    classList.remove("icon");
     setTimeout(() => {
-        this.classList.remove("revealed");
-        this.classList.add("icon");
+        classList.remove("revealed");
+        classList.add("icon");
     }, 1000);
 }
 
 //Reset if not matched//
-// function match() {
-//     setTimeout(function () {
-//         if (document.getElementsByClassName("revealed").length > 1) {
-//             if (document.getElementsByClassName("revealed")[0].innerHTML ==
-//                 document.getElementsByClassName("revealed")[1].innerHTML) {
-//                 document.getElementsByClassName("revealed")[0].this.classList.remove("icon");
-//                 document.getElementsByClassName("revealed")[1].this.classList.remove("icon");
-//             };
-//         }
-//     }, 500);
-// }
+function match() {
+    setTimeout(function () {
+        let cards = document.getElementsByClassName("revealed");
+        if (cards.length === 2 && cards[0].src === cards[1].src) {
+            cards[0].classList.add("matched");
+            cards[0].classList.remove("revealed, icon");
+            cards[1].classList.add("matched");
+            cards[1].classList.remove("revealed");
+            console.log("this is a match");
+        } else {
+            if (cards.length > 0) {
+                cards[0].classList.remove("icon");
+                cards[0].classList.add("revealed");
+            } else if (cards.length === 2) {
+                cards[1].classList.add("icon");
+                cards[1].classList.remove("revealed");
+            }
+            console.log(cards.length);
+
+
+        }
+
+        // if (document.getElementsByClassName("revealed").length > 1) {
+        //     if (document.getElementsByClassName("revealed")[0].innerHTML ==
+        //         document.getElementsByClassName("revealed")[1].innerHTML) {
+        //             document.getElementsByClassName("revealed")[0].this.classList.remove("icon");
+        //             document.getElementsByClassName("revealed")[1].this.classList.remove("icon");
+        //         };
+        //     }
+    }, 1000);
+}
+
+function revealmatch() {
+    reveals(this.classList);
+    match();
+
+
+}
