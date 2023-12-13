@@ -26,8 +26,6 @@ function newgame() {
     });
 
     //flip icon when clicked//
-    // const flip = document.getElementsByClassName("icon");
-
     let beenClicked = false;
     let firstClicked, secondClicked;
 
@@ -35,14 +33,16 @@ function newgame() {
         this.classList.toggle("revealed");
         this.classList.add("revealed");
         this.classList.remove("icon");
+        let cards = document.getElementsByClassName("revealed");
 
         if (!beenClicked) {
-            hasBeenClicked = true;
+            beenClicked = true;
             firstClicked = this;
+            noclick();
             return;
         }
         secondClicked = this;
-        hasBeenClicked = false;
+        beenClicked = false;
 
         checkForMatch();
     }
