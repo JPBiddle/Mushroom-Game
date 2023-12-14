@@ -30,15 +30,14 @@ function newgame() {
     let firstClicked = ``;
     let secondClicked = ``;
     function flipCard() {
+        if (this === firstClicked) return;
         this.classList.remove("icon");
-        this.classList.toggle("revealed");
         this.classList.add("revealed");
 
         //Assigning names for first and second clicked cards//
         if (!beenClicked) {
             beenClicked = true;
             firstClicked = this;
-            this.removeEventListener("click", flipCard);
             console.log(firstClicked);
             return;
         } else {
@@ -54,7 +53,7 @@ function newgame() {
     function checkForMatch() {
         let firstClickedData = firstClicked.src;
         let secondClickedData = secondClicked.src;
-        if (firstClickedData === secondClickedData) {
+        if (firstClickedData.first === secondClickedData) {
             noClick();
             return;
         }
