@@ -29,10 +29,12 @@ function newgame() {
     let beenClicked = false;
     let firstClicked = ``;
     let secondClicked = ``;
+    let noThirdClick = false;
     function flipCard() {
-        if (this === firstClicked) return;
+        if (noThirdClick) return;
         this.classList.remove("icon");
         this.classList.add("revealed");
+        // if (this === firstClicked) return;
 
         //Assigning names for first and second clicked cards//
         if (!beenClicked) {
@@ -41,7 +43,6 @@ function newgame() {
             console.log(firstClicked);
             return;
         } else {
-
             secondClicked = this;
             beenClicked = false;
             console.log(secondClicked);
@@ -53,20 +54,29 @@ function newgame() {
     function checkForMatch() {
         let firstClickedData = firstClicked.src;
         let secondClickedData = secondClicked.src;
-        if (firstClickedData.first === secondClickedData) {
+        if (firstClickedData === secondClickedData) {
+            // match();
             noClick();
             return;
         }
         unreveal();
         //Function to reset if no match//
         function unreveal() {
+            noThirdClick = true;
             setTimeout(() => {
                 firstClicked.classList.remove("revealed");
                 firstClicked.classList.add("icon");
                 secondClicked.classList.remove("revealed");
                 secondClicked.classList.add("icon");
+                noThirdClick = false;
             }, 1000);
         }
+        // function match() {
+        //     firstClicked.classList.add("revealed");
+        //     firstClicked.classList.remove("icon");
+        //     secondClicked.classList.add("revealed");
+        //     secondClicked.classList.remove("icon");
+        // }
     }
     //Function to remove click after first icon clicked//
     function noClick() {
