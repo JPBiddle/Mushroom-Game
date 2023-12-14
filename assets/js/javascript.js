@@ -24,66 +24,63 @@ function newgame() {
         gamegrid.appendChild(img);
         return;
     });
+}
+//flip icon when clicked//
+let beenClicked = false;
+let noThirdClick = false;
+let firstClicked = ``;
+let secondClicked = ``;
 
-    //flip icon when clicked//
-    let beenClicked = false;
-    let firstClicked = ``;
-    let secondClicked = ``;
-    let noThirdClick = false;
-    function flipCard() {
-        if (noThirdClick) return;
-        this.classList.remove("icon");
-        this.classList.add("revealed");
-        // if (this === firstClicked) return;
+function flipCard() {
+    if (noThirdClick) return;
+    if (this === firstClicked) return;
+    this.classList.remove("icon");
+    this.classList.add("revealed");
 
-        //Assigning names for first and second clicked cards//
-        if (!beenClicked) {
-            beenClicked = true;
-            firstClicked = this;
-            console.log(firstClicked);
-            return;
-        } else {
-            secondClicked = this;
-            beenClicked = false;
-            console.log(secondClicked);
-            checkForMatch();
-            return;
-        }
+
+    //Assigning names for first and second clicked cards//
+    if (!beenClicked) {
+        beenClicked = true;
+        firstClicked = this;
+        return;
     }
-    //Function to check for a match//
-    function checkForMatch() {
-        let firstClickedData = firstClicked.src;
-        let secondClickedData = secondClicked.src;
-        if (firstClickedData === secondClickedData) {
-            // match();
-            noClick();
-            return;
-        }
+    secondClicked = this;
+    // beenClicked = false;
+    checkForMatch();
+    // return;
+}
+
+//Function to check for a match//
+function checkForMatch() {
+    let firstClickedData = firstClicked.src;
+    let secondClickedData = secondClicked.src;
+    if (firstClickedData === secondClickedData) {
+        noClick();
         unreveal();
-        //Function to reset if no match//
-        function unreveal() {
-            noThirdClick = true;
-            setTimeout(() => {
-                firstClicked.classList.remove("revealed");
-                firstClicked.classList.add("icon");
-                secondClicked.classList.remove("revealed");
-                secondClicked.classList.add("icon");
-                noThirdClick = false;
-            }, 1000);
-        }
-        // function match() {
-        //     firstClicked.classList.add("revealed");
-        //     firstClicked.classList.remove("icon");
-        //     secondClicked.classList.add("revealed");
-        //     secondClicked.classList.remove("icon");
-        // }
     }
-    //Function to remove click after first icon clicked//
-    function noClick() {
-        firstClicked.removeEventListener('click', flipCard);
-        secondClicked.removeEventListener('click', flipCard);
+    unreveal();
+    //Function to reset if no match//
+    function unreveal() {
+        noThirdClick = true;
+        setTimeout(() => {
+            firstClicked.classList.remove("revealed");
+            firstClicked.classList.add("icon");
+            secondClicked.classList.remove("revealed");
+            secondClicked.classList.add("icon");
+            noThirdClick = false;
+            resetBoard();
+        }, 1000);
     }
-};
+}
+function resetBoard() {
+    [beenClicked, noThirdClick] = [false, false];
+    [firstClicked, secondClicked] = [``, ``];
+}
+//Function to remove click after first icon clicked//
+function noClick() {
+    firstClicked.removeEventListener('click', flipCard);
+    secondClicked.removeEventListener('click', flipCard);
+}
 
 
 //Remove current array of mushrooms and generates new using newgame function// 
