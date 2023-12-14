@@ -26,8 +26,6 @@ function newgame() {
     });
 
     //flip icon when clicked//
-    // let beenClicked = false;
-    // let firstClicked, secondClicked;
     let beenClicked = false;
     let firstClicked = ``;
     let secondClicked = ``;
@@ -36,10 +34,11 @@ function newgame() {
         this.classList.toggle("revealed");
         this.classList.add("revealed");
 
-
+        //Assigning names for first and second clicked cards//
         if (!beenClicked) {
             beenClicked = true;
             firstClicked = this;
+            this.removeEventListener("click", flipCard);
             console.log(firstClicked);
             return;
         } else {
@@ -60,7 +59,7 @@ function newgame() {
             return;
         }
         unreveal();
-
+        //Function to reset if no match//
         function unreveal() {
             setTimeout(() => {
                 firstClicked.classList.remove("revealed");
@@ -70,7 +69,7 @@ function newgame() {
             }, 1000);
         }
     }
-    //Function to remove click after clicked//
+    //Function to remove click after first icon clicked//
     function noClick() {
         firstClicked.removeEventListener('click', flipCard);
         secondClicked.removeEventListener('click', flipCard);

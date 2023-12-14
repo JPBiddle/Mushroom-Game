@@ -1,6 +1,7 @@
 body {
     background-image: url(/assets/images/background_spring.webp);
     background-repeat: no-repeat;
+    /* width: -webkit-fill-available; */
 }
 
 .site-head {
