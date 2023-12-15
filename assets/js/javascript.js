@@ -34,8 +34,8 @@ let secondClicked = ``;
 function flipCard() {
     if (noThirdClick) return;
     if (this === firstClicked) return;
-    this.classList.remove("icon");
-    this.classList.add("revealed");
+    this.classList.toggle("icon");
+    this.classList.toggle("revealed");
 
 
     //Assigning names for first and second clicked cards//
@@ -56,28 +56,32 @@ function checkForMatch() {
     let secondClickedData = secondClicked.src;
     if (firstClickedData === secondClickedData) {
         noClick();
-        unreveal();
     }
     unreveal();
     //Function to reset if no match//
     function unreveal() {
         noThirdClick = true;
         setTimeout(() => {
-            firstClicked.classList.remove("revealed");
-            firstClicked.classList.add("icon");
-            secondClicked.classList.remove("revealed");
-            secondClicked.classList.add("icon");
+            firstClicked.classList.toggle("revealed");
+            firstClicked.classList.toggle("icon");
+            secondClicked.classList.toggle("revealed");
+            secondClicked.classList.toggle("icon");
             noThirdClick = false;
             resetBoard();
         }, 1000);
     }
 }
+
 function resetBoard() {
     [beenClicked, noThirdClick] = [false, false];
     [firstClicked, secondClicked] = [``, ``];
 }
 //Function to remove click after first icon clicked//
 function noClick() {
+    firstClicked.classList.toggle("matched");
+    firstClicked.classList.toggle("icon");
+    secondClicked.classList.toggle("matched");
+    secondClicked.classList.toggle("icon");
     firstClicked.removeEventListener('click', flipCard);
     secondClicked.removeEventListener('click', flipCard);
 }
