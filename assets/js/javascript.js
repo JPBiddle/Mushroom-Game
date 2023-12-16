@@ -112,6 +112,7 @@ function end() {
     console.log(finishGame.length);
     if (finishGame.length == 0) {
         setTimeout(function () { alert("end"); }, 500);
+        setTimeout(function () { reset(); }, 2000);
     } else {
         return;
     }
