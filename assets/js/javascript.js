@@ -56,8 +56,11 @@ function checkForMatch() {
     let secondClickedData = secondClicked.src;
     if (firstClickedData === secondClickedData) {
         noClick();
+
     }
     unreveal();
+    end();
+
     //Function to reset if no match//
     function unreveal() {
         noThirdClick = true;
@@ -72,6 +75,7 @@ function checkForMatch() {
             secondClicked.classList.toggle("icon");
             noThirdClick = false;
             resetBoard();
+
         }, 1000);
     }
 }
@@ -103,7 +107,21 @@ function reset() {
     return;
 }
 
-// //Function to change class of icons to reveal them//s
+function end() {
+    let finishGame = document.querySelectorAll(".icon");
+    console.log(finishGame.length);
+}
+    // finshList = finishGame[0];
+    // if (finishGame.classList == 0) {
+    // finishGame.forEach(finishGame.length == 0;) {
+    //     console.log(finishGame.length);
+    // }
+    //     alert("Finish");
+
+
+// }
+
+// //Function to change class ;of icons to reveal them//s
 // //Thank you tutor Joanne for helping me solve this problem//
 // function reveals(classList) {
 //     classList.add("revealed");
@@ -152,4 +170,3 @@ function reset() {
 //     match();
 
 
-// }

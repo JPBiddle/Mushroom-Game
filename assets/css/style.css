@@ -44,7 +44,7 @@ body {
 }
 
 .icon {
-    background-color: black;
+    background-color: none;
     filter: contrast(0);
     border-radius: 15px;
     opacity: 0.3;
