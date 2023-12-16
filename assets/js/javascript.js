@@ -62,6 +62,10 @@ function checkForMatch() {
     function unreveal() {
         noThirdClick = true;
         setTimeout(() => {
+            if (firstClicked.classList.contains("matched")) {
+                noThirdClick = false;
+                resetBoard();
+            }
             firstClicked.classList.toggle("revealed");
             firstClicked.classList.toggle("icon");
             secondClicked.classList.toggle("revealed");
@@ -78,10 +82,12 @@ function resetBoard() {
 }
 //Function to remove click after first icon clicked//
 function noClick() {
-    firstClicked.classList.toggle("matched");
-    firstClicked.classList.toggle("icon");
-    secondClicked.classList.toggle("matched");
-    secondClicked.classList.toggle("icon");
+    firstClicked.classList.add("matched");
+    firstClicked.classList.remove("icon");
+    firstClicked.classList.remove("revealed");
+    secondClicked.classList.add("matched");
+    secondClicked.classList.remove("icon");
+    secondClicked.classList.remove("revealed");
     firstClicked.removeEventListener('click', flipCard);
     secondClicked.removeEventListener('click', flipCard);
 }
