@@ -110,6 +110,12 @@ function reset() {
 function end() {
     let finishGame = document.querySelectorAll(".icon");
     console.log(finishGame.length);
+    console.log(finishGame.length);
+    if (finishGame.length == 0) {
+        alert("end");
+    } else {
+        return;
+    }
 }
     // finshList = finishGame[0];
     // if (finishGame.classList == 0) {
