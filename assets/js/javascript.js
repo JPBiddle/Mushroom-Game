@@ -132,7 +132,7 @@ function nonewgame() {
 }
 
 //New game with 5x5 grid for medium setting//
-function medium() {
+function hard() {
     nonewgame();
     var mushroomsmed = ["/assets/images/medium_001.png", "/assets/images/medium_001.png", "/assets/images/medium_002.png", "/assets/images/medium_002.png",
         "/assets/images/medium_003.png", "/assets/images/medium_003.png", "/assets/images/medium_004.png", "/assets/images/medium_004.png",
