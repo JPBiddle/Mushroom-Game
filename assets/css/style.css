@@ -57,7 +57,7 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6, 7em);
-    grid-template-rows: repeat(6, 7em);
+    grid-template-rows: repeat(5, 7em);
 }
 
 .icon {
