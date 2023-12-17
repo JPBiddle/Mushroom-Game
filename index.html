@@ -21,18 +21,25 @@
     <title>Matching Mushroom Mini Game</title>
   </head>
 
-  <body onload="newgame()";>
+  <body onload="newgame()" ;>
     <h1 class="site-head">Matching Mushrooms</h1>
     <nav class="navbar">
       <div style="width: 100%">
         <ul class="nav-style">
-          <li>Rules</li>
-          <li>
-            <button type="button" id="newgame" onclick="reset()">
-              Reset
+          <ul>
+            Rules
+          </ul>
+          <ul>
+            <button type="button" id="newgame" onclick="reset()">Reset</button>
+          </ul>
+          <ul>
+            <p>Difficulty:</p>
+            <button type="button" id="newgame" onclick="reset()">Easy</button>
+            <button type="button" id="newgame" onclick="medium()">
+              Medium
             </button>
-          </li>
-          <li>Difficulty</li>
+            <button type="button" id="newgame" onclick="hard()">Hard</button>
+          </ul>
         </ul>
       </div>
     </nav>

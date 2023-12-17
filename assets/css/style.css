@@ -15,16 +15,6 @@ body {
     align-items: center;
 }
 
-
-.gamegrid {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    gap: 10px;
-    margin: 0 auto;
-}
-
-
 .boxrow {
     gap: 10px;
 }
@@ -38,9 +28,21 @@ body {
 }
 
 .gamegrid {
+    width: fit-content;
+    gap: 10px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 7em);
     grid-template-rows: repeat(4, 7em);
+}
+
+.gamegrid-medium {
+    width: fit-content;
+    gap: 10px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 7em);
+    grid-template-rows: repeat(6, 7em);
 }
 
 .icon {
