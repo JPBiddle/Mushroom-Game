@@ -44,28 +44,28 @@ body {
 
 .gamegrid-medium {
     width: fit-content;
-    gap: 10px;
+    gap: 6px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(6, 6em);
-    grid-template-rows: repeat(4, 6em);
+    grid-template-columns: repeat(6, 7em);
+    grid-template-rows: repeat(4, 7em);
 }
 
 .gamegrid-hard {
     width: fit-content;
-    gap: 5px;
+    gap: 3px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(6, 6em);
-    grid-template-rows: repeat(6, 6em);
+    grid-template-columns: repeat(6, 7em);
+    grid-template-rows: repeat(6, 7em);
 }
 
 .icon {
-    background-color: none;
+    background-color: black;
     filter: contrast(0);
     border-radius: 15px;
-    opacity: 0.3;
-    transition: 0.3s;
+    opacity: 0.9;
+    transition: 0.1s;
 }
 
 .revealed,
@@ -75,5 +75,6 @@ body {
     filter: none;
     border-radius: 15px;
     opacity: 1.0;
-    transition: 0.3s;
+    transition: 0.1s;
+    filter: drop-shadow(2px 1px 2px rgba(0, 0, 0, 0.4));
 }

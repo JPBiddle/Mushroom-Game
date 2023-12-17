@@ -76,7 +76,7 @@ function checkForMatch() {
             noThirdClick = false;
             resetBoard();
 
-        }, 1000);
+        }, 750);
     }
 }
 
@@ -244,4 +244,23 @@ function hard() {
     });
 }
 
-//Function to change background//
+//Function to change background image//
+function spring() {
+    document.body.style.backgroundImage = 'url("null")';
+    document.body.style.backgroundImage = 'url("/assets/images/spring.webp")';
+};
+
+function summer() {
+    document.body.style.backgroundImage = 'url("null")';
+    document.body.style.backgroundImage = 'url("/assets/images/summer.webp")';
+};
+
+function autumn() {
+    document.body.style.backgroundImage = 'url("null")';
+    document.body.style.backgroundImage = 'url("/assets/images/autumn.webp")';
+};
+
+function winter() {
+    document.body.style.backgroundImage = 'url("null")';
+    document.body.style.backgroundImage = 'url("/assets/images/winter.webp")';
+};
