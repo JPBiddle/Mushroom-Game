@@ -35,12 +35,30 @@
           <ul>
             <p>Difficulty:</p>
             <button type="button" id="newgame" onclick="reset()">Easy</button>
-            <button type="button" id="newgame" onclick="reset()">Medium</button>
+            <button type="button" id="newgame" onclick="medium()">
+              Medium
+            </button>
             <button type="button" id="newgame" onclick="hard()">Hard</button>
           </ul>
         </ul>
       </div>
     </nav>
+    <div class="backgroundchange">
+      <input
+        type="radio"
+        id="spring"
+        name="background"
+        value="spring"
+        checked
+      />
+      <label for="spring">Spring</label>
+      <input type="radio" id="summer" name="background" value="summer" />
+      <label for="summer">Summer</label>
+      <input type="radio" id="autumn" name="background" value="autumn" />
+      <label for="autumn">Autumn</label>
+      <input type="radio" id="winter" name="background" value="winter" />
+      <label for="winter">Winter</label>
+    </div>
     <script src="/assets/js/javascript.js"></script>
   </body>
 </html>

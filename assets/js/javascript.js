@@ -107,6 +107,10 @@ function reset() {
     while (iconsmed.length > 0) {
         iconsmed[0].remove();
     };
+    const iconshard = document.getElementsByClassName("gamegrid-hard");
+    while (iconshard.length > 0) {
+        iconshard[0].remove();
+    };
     newgame();
     return;
 }
@@ -128,13 +132,23 @@ function nonewgame() {
     while (icons.length > 0) {
         icons[0].remove();
     };
+    const iconsmed = document.getElementsByClassName("gamegrid-medium");
+    while (iconsmed.length > 0) {
+        icons[0].remove();
+    };
+    const iconshard = document.getElementsByClassName("gamegrid-hard");
+    while (iconshard.length > 0) {
+        icons[0].remove();
+    };
     return;
 }
 
-//New game with 5x5 grid for medium setting//
-function hard() {
-    nonewgame();
-    var mushroomsmed = ["/assets/images/medium_001.png", "/assets/images/medium_001.png", "/assets/images/medium_002.png", "/assets/images/medium_002.png",
+//Game difficulties//
+
+//Medium difficulty//
+function medium() {
+    reset();
+    var mushroomshard = ["/assets/images/medium_001.png", "/assets/images/medium_001.png", "/assets/images/medium_002.png", "/assets/images/medium_002.png",
         "/assets/images/medium_003.png", "/assets/images/medium_003.png", "/assets/images/medium_004.png", "/assets/images/medium_004.png",
         "/assets/images/medium_005.png", "/assets/images/medium_005.png", "/assets/images/medium_006.png", "/assets/images/medium_006.png",
         "/assets/images/medium_007.png", "/assets/images/medium_007.png", "/assets/images/medium_008.png", "/assets/images/medium_008.png",
@@ -142,7 +156,38 @@ function hard() {
         "/assets/images/medium_011.png", "/assets/images/medium_011.png", "/assets/images/medium_012.png", "/assets/images/medium_012.png",
         "/assets/images/medium_013.png", "/assets/images/medium_013.png", "/assets/images/medium_014.png", "/assets/images/medium_014.png",
         "/assets/images/medium_015.png", "/assets/images/medium_015.png", "/assets/images/medium_016.png", "/assets/images/medium_016.png",
-        "/assets/images/medium_017.png", "/assets/images/medium_017.png", "/assets/images/medium_018.png", "/assets/images/medium_018.png",];
+        "/assets/images/medium_017.png", "/assets/images/medium_017.png", "/assets/images/medium_018.png", "/assets/images/medium_018.png"];
+
+    //Randomise array of icons//
+    mushroomshard.sort(function () { return 0.5 - Math.random(); });
+
+    //Create div to hold images//
+    const gamegrid = document.createElement('div');
+    gamegrid.className = "gamegrid-hard";
+    document.body.appendChild(gamegrid);
+
+    //Push images into body//
+    mushroomshard.forEach(function (mushroom) {
+        const img = document.createElement('img');
+        img.src = mushroom;
+        img.height = "110";
+        img.width = "110";
+        img.className = "icon";
+        img.addEventListener("click", flipCard);
+        gamegrid.appendChild(img);
+        return;
+    });
+}
+
+//New game with 6x6 grid for medium setting//
+function medium() {
+    reset();
+    nonewgame();
+    var mushroomsmed = ["/assets/images/mushroom_001.png", "/assets/images/mushroom_001.png", "/assets/images/mushroom_002.png", "/assets/images/mushroom_002.png",
+        "/assets/images/mushroom_003.png", "/assets/images/mushroom_003.png", "/assets/images/mushroom_004.png", "/assets/images/mushroom_004.png", "/assets/images/mushroom_005.png",
+        "/assets/images/mushroom_005.png", "/assets/images/mushroom_006.png", "/assets/images/mushroom_006.png", "/assets/images/mushroom_007.png", "/assets/images/mushroom_007.png",
+        "/assets/images/mushroom_008.png", "/assets/images/mushroom_008.png", "/assets/images/mushroom_009.png", "/assets/images/mushroom_009.png", "/assets/images/mushroom_010.png",
+        "/assets/images/mushroom_010.png", "/assets/images/mushroom_011.png", "/assets/images/mushroom_011.png", "/assets/images/mushroom_012.png", "/assets/images/mushroom_012.png"];
 
     //Randomise array of icons//
     mushroomsmed.sort(function () { return 0.5 - Math.random(); });
@@ -164,3 +209,39 @@ function hard() {
         return;
     });
 }
+
+function hard() {
+    reset();
+    nonewgame();
+    var mushroomshard = ["/assets/images/medium_001.png", "/assets/images/medium_001.png", "/assets/images/medium_002.png", "/assets/images/medium_002.png",
+        "/assets/images/medium_003.png", "/assets/images/medium_003.png", "/assets/images/medium_004.png", "/assets/images/medium_004.png",
+        "/assets/images/medium_005.png", "/assets/images/medium_005.png", "/assets/images/medium_006.png", "/assets/images/medium_006.png",
+        "/assets/images/medium_007.png", "/assets/images/medium_007.png", "/assets/images/medium_008.png", "/assets/images/medium_008.png",
+        "/assets/images/medium_009.png", "/assets/images/medium_009.png", "/assets/images/medium_010.png", "/assets/images/medium_010.png",
+        "/assets/images/medium_011.png", "/assets/images/medium_011.png", "/assets/images/medium_012.png", "/assets/images/medium_012.png",
+        "/assets/images/medium_013.png", "/assets/images/medium_013.png", "/assets/images/medium_014.png", "/assets/images/medium_014.png",
+        "/assets/images/medium_015.png", "/assets/images/medium_015.png", "/assets/images/medium_016.png", "/assets/images/medium_016.png",
+        "/assets/images/medium_017.png", "/assets/images/medium_017.png", "/assets/images/medium_018.png", "/assets/images/medium_018.png",];
+
+    //Randomise array of icons//
+    mushroomshard.sort(function () { return 0.5 - Math.random(); });
+
+    //Create div to hold images//
+    const gamegrid = document.createElement('div');
+    gamegrid.className = "gamegrid-hard";
+    document.body.appendChild(gamegrid);
+
+    //Push images into body//
+    mushroomshard.forEach(function (mushroom) {
+        const img = document.createElement('img');
+        img.src = mushroom;
+        img.height = "110";
+        img.width = "110";
+        img.className = "icon";
+        img.addEventListener("click", flipCard);
+        gamegrid.appendChild(img);
+        return;
+    });
+}
+
+//Function to change background//

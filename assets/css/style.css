@@ -1,7 +1,7 @@
 body {
-    background-image: url(/assets/images/background_spring.webp);
+    background-image: url(/assets/images/spring.webp);
     background-repeat: no-repeat;
-    /* width: -webkit-fill-available; */
+    background-size: cover;
 }
 
 .site-head {
@@ -27,6 +27,12 @@ body {
     margin: auto;
 }
 
+.backgroundchange {
+    position: absolute;
+    bottom: 30px;
+    right: 40%;
+}
+
 .gamegrid {
     width: fit-content;
     gap: 10px;
@@ -41,8 +47,17 @@ body {
     gap: 10px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(6, 7em);
-    grid-template-rows: repeat(6, 7em);
+    grid-template-columns: repeat(6, 6em);
+    grid-template-rows: repeat(4, 6em);
+}
+
+.gamegrid-hard {
+    width: fit-content;
+    gap: 5px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 6em);
+    grid-template-rows: repeat(6, 6em);
 }
 
 .icon {
