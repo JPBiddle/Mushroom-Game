@@ -150,11 +150,11 @@ function nonewgame() {
 function medium() {
     reset();
     nonewgame();
-    var mushroomsmed = ["/assets/images/mushroom_001.png", "/assets/images/mushroom_001.png", "/assets/images/mushroom_002.png", "/assets/images/mushroom_002.png",
-        "/assets/images/mushroom_003.png", "/assets/images/mushroom_003.png", "/assets/images/mushroom_004.png", "/assets/images/mushroom_004.png", "/assets/images/mushroom_005.png",
-        "/assets/images/mushroom_005.png", "/assets/images/mushroom_006.png", "/assets/images/mushroom_006.png", "/assets/images/mushroom_007.png", "/assets/images/mushroom_007.png",
-        "/assets/images/mushroom_008.png", "/assets/images/mushroom_008.png", "/assets/images/mushroom_009.png", "/assets/images/mushroom_009.png", "/assets/images/mushroom_010.png",
-        "/assets/images/mushroom_010.png", "/assets/images/mushroom_011.png", "/assets/images/mushroom_011.png", "/assets/images/mushroom_012.png", "/assets/images/mushroom_012.png"];
+    var mushroomsmed = ["/assets/images/mushroom_2_001.png", "/assets/images/mushroom_2_001.png", "/assets/images/mushroom_2_002.png", "/assets/images/mushroom_2_002.png",
+        "/assets/images/mushroom_2_003.png", "/assets/images/mushroom_2_003.png", "/assets/images/mushroom_2_004.png", "/assets/images/mushroom_2_004.png", "/assets/images/mushroom_2_005.png",
+        "/assets/images/mushroom_2_005.png", "/assets/images/mushroom_2_006.png", "/assets/images/mushroom_2_006.png", "/assets/images/mushroom_2_007.png", "/assets/images/mushroom_2_007.png",
+        "/assets/images/mushroom_2_008.png", "/assets/images/mushroom_2_008.png", "/assets/images/mushroom_2_009.png", "/assets/images/mushroom_2_009.png", "/assets/images/mushroom_2_010.png",
+        "/assets/images/mushroom_2_010.png", "/assets/images/mushroom_2_011.png", "/assets/images/mushroom_2_011.png", "/assets/images/mushroom_2_012.png", "/assets/images/mushroom_2_012.png"];
 
     //Randomise array of icons//
     mushroomsmed.sort(function () { return 0.5 - Math.random(); });
