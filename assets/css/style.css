@@ -1,8 +1,22 @@
+html {
+    height: 100%;
+}
+
 body {
     background-image: url(/assets/images/spring.webp);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
+    -webkit-background-size: cover;
+    min-height: 100%;
+}
+
+@media screen and (max-width: 890px) {
+    body {
+        background-image: url(/assets/images/spring.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1000px;
+        min-height: 100%;
+    }
 }
 
 .site-head {
@@ -54,9 +68,13 @@ body {
 }
 
 .backgroundchange {
-    position: sticky;
-    top: 90%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     text-align: center;
+    top: 90%;
     font-family: "Gloria Hallelujah", "sans-serif";
 }
 
