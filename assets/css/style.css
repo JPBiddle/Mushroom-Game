@@ -240,6 +240,8 @@ body {
 }
 
 #mute {
+    border: none;
+    background: none;
     opacity: 0.9;
     position: fixed;
     top: 6%;
