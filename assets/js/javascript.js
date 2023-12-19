@@ -69,10 +69,10 @@ function checkForMatch() {
                 noThirdClick = false;
                 resetBoard();
             }
-            firstClicked.classList.toggle("revealed");
-            firstClicked.classList.toggle("icon");
-            secondClicked.classList.toggle("revealed");
-            secondClicked.classList.toggle("icon");
+            firstClicked.classList?.toggle("revealed");
+            firstClicked.classList?.toggle("icon");
+            secondClicked.classList?.toggle("revealed");
+            secondClicked.classList?.toggle("icon");
             noThirdClick = false;
             resetBoard();
 

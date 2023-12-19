@@ -27,6 +27,7 @@ body {
     }
 }
 
+
 .site-head {
     padding: 25px;
     text-align: center;
@@ -66,6 +67,7 @@ body {
 @media screen and (max-width: 580px) {
     .reset {
         padding: 0;
+        margin-left: 0;
     }
 }
 
@@ -82,13 +84,14 @@ body {
 }
 
 .backgroundchange {
-    position: absolute;
+    position: fixed;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
+    bottom: 5%;
+    z-index: 5;
     text-align: center;
-    top: 80%;
     font-family: "Gloria Hallelujah", "sans-serif";
 }
 
@@ -99,8 +102,10 @@ body {
         margin-right: auto;
         left: 0;
         right: 0;
+        bottom: 15px;
+        z-index: 5;
         text-align: center;
-        /* top: 75%; */
+        padding-top: 10%;
         font-family: "Gloria Hallelujah", "sans-serif";
     }
 }
@@ -114,14 +119,15 @@ body {
     grid-template-rows: repeat(4, 7em);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
     .gamegrid {
         width: fit-content;
         gap: 10px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(4, 75px);
-        grid-template-rows: repeat(4, 75px);
+        grid-template-columns: repeat(4, 60px);
+        grid-template-rows: repeat(4, 60px);
+        padding-top: 5%;
     }
 }
 
@@ -134,16 +140,18 @@ body {
     grid-template-rows: repeat(4, 7em);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
     .gamegrid-medium {
         width: fit-content;
-        gap: 10px;
+        gap: 6px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(6, 75px);
-        grid-template-rows: repeat(4, 75px);
+        grid-template-columns: repeat(4, 60px);
+        grid-template-rows: repeat(6, 60px);
+        padding-top: 5%;
     }
 }
+
 
 .gamegrid-hard {
     width: fit-content;
@@ -154,14 +162,15 @@ body {
     grid-template-rows: repeat(5, 7em);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
     .gamegrid-hard {
         width: fit-content;
-        gap: 10px;
+        gap: 4px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(6, 75px);
-        grid-template-rows: repeat(5, 75px);
+        grid-template-columns: repeat(5, 60px);
+        grid-template-rows: repeat(6, 60px);
+        padding-top: 5%;
     }
 }
 
@@ -173,15 +182,31 @@ body {
     transition: 0.1s;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
     .icon {
         background-color: black;
         filter: contrast(0);
         border-radius: 15px;
         opacity: 0.9;
         transition: 0.1s;
-        width: 75px;
-        height: 75px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+
+@media screen and (max-width: 580px) {
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    img {
+        width: 60px;
+        height: 60px;
     }
 }
 
