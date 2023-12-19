@@ -238,3 +238,11 @@ body {
         border-radius: 7px;
     }
 }
+
+#mute {
+    opacity: 0.9;
+    position: fixed;
+    top: 6%;
+    right: 0;
+    left: 85%;
+}

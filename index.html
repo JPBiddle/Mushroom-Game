@@ -26,7 +26,14 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script src="/assets/js/javascript.js"></script>
 
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/ba6cdc6122.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Matching Mushroom Mini Game</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png" />
   </head>
 
   <body onload="newgame()" ;>
@@ -50,6 +57,9 @@
         </ul>
       </div>
     </nav>
+    <button type="button" id="mute" onclick="mute()">
+      <i class="fa-solid fa-volume-xmark fa-xl" style="color: #4b4c4e"></i>
+    </button>
     <div class="backgroundchange">
       <input
         type="radio"
@@ -86,6 +96,12 @@
       />
       <label for="winter" class="bckbtn">Winter</label>
     </div>
+    <audio
+      src="/assets/audio/soundtrack.mp3"
+      autoplay="autoplay"
+      loop="loop"
+      id="soundtrack"
+    ></audio>
     <script src="/assets/js/javascript.js"></script>
   </body>
 </html>
