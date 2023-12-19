@@ -21,6 +21,7 @@ function newgame() {
         img.width = "110";
         img.className = "icon";
         img.addEventListener("click", flipCard);
+        img.style.cursor = "pointer";
         gamegrid.appendChild(img);
         return;
     });

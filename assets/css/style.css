@@ -227,6 +227,10 @@ body {
     border-radius: 7px;
 }
 
+:hover.bckbtn {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 580px) {
     .bckbtn {
         margin-right: 10px;
