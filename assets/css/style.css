@@ -2,6 +2,13 @@ html {
     height: 100%;
 }
 
+@media screen and (max-width: 580px) {
+    html {
+        width: fit-content;
+        height: fit-content;
+    }
+}
+
 body {
     background-image: url(/assets/images/spring.webp);
     background-repeat: no-repeat;
@@ -9,11 +16,12 @@ body {
     min-height: 100%;
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 580px) {
     body {
         background-image: url(/assets/images/spring.webp);
         background-repeat: no-repeat;
         background-size: cover;
+        width: fit-content;
         height: 1000px;
         min-height: 100%;
     }
@@ -55,6 +63,12 @@ body {
     margin-left: 10%;
 }
 
+@media screen and (max-width: 580px) {
+    .reset {
+        padding: 0;
+    }
+}
+
 .boxrow {
     gap: 10px;
 }
@@ -74,8 +88,21 @@ body {
     left: 0;
     right: 0;
     text-align: center;
-    top: 90%;
+    top: 80%;
     font-family: "Gloria Hallelujah", "sans-serif";
+}
+
+@media screen and (max-width: 580px) {
+    .backgroundchange {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        /* top: 75%; */
+        font-family: "Gloria Hallelujah", "sans-serif";
+    }
 }
 
 .gamegrid {
@@ -87,6 +114,17 @@ body {
     grid-template-rows: repeat(4, 7em);
 }
 
+@media screen and (max-width: 900px) {
+    .gamegrid {
+        width: fit-content;
+        gap: 10px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 75px);
+        grid-template-rows: repeat(4, 75px);
+    }
+}
+
 .gamegrid-medium {
     width: fit-content;
     gap: 6px;
@@ -94,6 +132,17 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 7em);
     grid-template-rows: repeat(4, 7em);
+}
+
+@media screen and (max-width: 900px) {
+    .gamegrid-medium {
+        width: fit-content;
+        gap: 10px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 75px);
+        grid-template-rows: repeat(4, 75px);
+    }
 }
 
 .gamegrid-hard {
@@ -105,12 +154,35 @@ body {
     grid-template-rows: repeat(5, 7em);
 }
 
+@media screen and (max-width: 900px) {
+    .gamegrid-hard {
+        width: fit-content;
+        gap: 10px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 75px);
+        grid-template-rows: repeat(5, 75px);
+    }
+}
+
 .icon {
     background-color: black;
     filter: contrast(0);
     border-radius: 15px;
     opacity: 0.9;
     transition: 0.1s;
+}
+
+@media screen and (max-width: 900px) {
+    .icon {
+        background-color: black;
+        filter: contrast(0);
+        border-radius: 15px;
+        opacity: 0.9;
+        transition: 0.1s;
+        width: 75px;
+        height: 75px;
+    }
 }
 
 .revealed,
@@ -128,4 +200,12 @@ body {
     margin-right: 30px;
     background: rgb(0, 0, 0, 0.2);
     border-radius: 7px;
+}
+
+@media screen and (max-width: 580px) {
+    .bckbtn {
+        margin-right: 10px;
+        background: rgb(0, 0, 0, 0.2);
+        border-radius: 7px;
+    }
 }

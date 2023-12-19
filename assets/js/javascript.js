@@ -26,10 +26,10 @@ function newgame() {
     });
 }
 //flip icon when clicked//
-let beenClicked = false;
-let noThirdClick = false;
-let firstClicked = ``;
-let secondClicked = ``;
+var beenClicked = false;
+var noThirdClick = false;
+var firstClicked = ``;
+var secondClicked = ``;
 
 function flipCard() {
     if (noThirdClick) return;
@@ -176,6 +176,8 @@ function medium() {
         return;
     });
 }
+
+//Hard Difficulty//
 
 function hard() {
     reset();
