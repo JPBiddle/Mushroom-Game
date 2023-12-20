@@ -320,3 +320,6 @@ function mute() {
     var soundtrack = document.getElementById("soundtrack");
     soundtrack.muted = !soundtrack.muted;
 }
+
+
+
