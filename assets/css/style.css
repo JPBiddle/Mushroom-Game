@@ -37,9 +37,35 @@ body {
 }
 
 #newgame {
+    outline: none;
     border: none;
     background: rgb(0, 0, 0, 0.2);
     border-radius: 7px;
+}
+
+#newgame:active {
+    outline: none;
+    border: none;
+    background: rgb(0, 0, 0, 0.4);
+    border-radius: 7px;
+}
+
+#newgamereset {
+    outline: none;
+    border: none;
+    background: rgb(0, 0, 0, 0.2);
+    border-radius: 7px;
+}
+
+#newgamereset:active {
+    outline: none;
+    border: none;
+    background: rgb(0, 0, 0, 0.4);
+    border-radius: 7px;
+}
+
+#newgame:focus {
+    background-color: rgb(31 153 239 / 65%);
 }
 
 .nav-style {
@@ -60,9 +86,12 @@ body {
 }
 
 .reset {
+    outline: none;
     padding: 0;
     margin-left: 10%;
 }
+
+
 
 @media screen and (max-width: 580px) {
     .reset {
@@ -240,6 +269,7 @@ body {
 }
 
 #mute {
+    outline: none;
     border: none;
     background: none;
     opacity: 0.9;

@@ -299,6 +299,23 @@ function winter() {
     document.body.style.backgroundImage = 'url("/assets/images/winter.webp")';
 }
 
+
+//Function for music to begin when window is interacted with//
+
+var isMusicPlaying = false;
+
+function myPlay() {
+    isMusicPlaying = true;
+    var audio = document.getElementById("soundtrack");
+    audio.play();
+}
+
+window.onclick = () => {
+    if (isMusicPlaying) return;
+    myPlay();
+};
+//Mute function//
+
 function mute() {
     var soundtrack = document.getElementById("soundtrack");
     soundtrack.muted = !soundtrack.muted;

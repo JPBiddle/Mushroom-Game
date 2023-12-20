@@ -36,13 +36,10 @@
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png" />
   </head>
 
-  <body onload="newgame()" ;>
-    <!-- <audio autoplay>
-      <source
-        src="/workspaces/Mushroom-Game/assets/audio/music.mp3"
-        type="audio/mpeg"
-      />
-    </audio> -->
+  <body onload="newgame()">
+    <audio id="soundtrack">
+      <source src="/assets/audio/soundtrack.mp3" type="audio/mpeg" />
+    </audio>
     <h1 class="site-head">Matching Mushrooms</h1>
     <nav class="navbar">
       <div style="width: 100%">
@@ -51,7 +48,9 @@
             Rules
           </ul>
           <ul class="reset">
-            <button type="button" id="newgame" onclick="reset()">Reset</button>
+            <button type="button" id="newgamereset" onclick="reset()">
+              Reset
+            </button>
           </ul>
           <ul class="difficulty">
             <button type="button" id="newgame" onclick="reset()">Easy</button>
