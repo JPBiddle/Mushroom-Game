@@ -86,7 +86,7 @@ body {
     display: flex;
     justify-content: space-around;
     font-family: "Gloria Hallelujah", "sans-serif";
-    padding-bottom: 10px;
+    padding-bottom: 4%;
 }
 
 .rules {
@@ -156,10 +156,9 @@ body {
         margin-right: auto;
         left: 0;
         right: 0;
-        bottom: 15px;
+        bottom: 3%;
         z-index: 5;
         text-align: center;
-        padding-top: 10%;
         font-family: "Gloria Hallelujah", "sans-serif";
     }
 }
