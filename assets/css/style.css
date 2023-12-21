@@ -14,7 +14,7 @@ html {
 /* Body background image */
 
 body {
-    background-image: url(/assets/images/spring.webp);
+    background-image: url(assets/images/spring.webp);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     min-height: 100%;
@@ -22,7 +22,7 @@ body {
 
 @media screen and (max-width: 580px) {
     body {
-        background-image: url(/assets/images/spring.webp);
+        background-image: url(assets/images/spring.webp);
         background-repeat: no-repeat;
         background-size: cover;
         width: fit-content;

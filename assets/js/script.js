@@ -1,22 +1,22 @@
 //Array of mushrooms with two of each icon//
 function newgame() {
    var mushrooms = [
-      "/assets/images/mushroom_001.png",
-      "/assets/images/mushroom_001.png",
-      "/assets/images/mushroom_002.png",
-      "/assets/images/mushroom_002.png",
-      "/assets/images/mushroom_003.png",
-      "/assets/images/mushroom_003.png",
-      "/assets/images/mushroom_004.png",
-      "/assets/images/mushroom_004.png",
-      "/assets/images/mushroom_005.png",
-      "/assets/images/mushroom_005.png",
-      "/assets/images/mushroom_006.png",
-      "/assets/images/mushroom_006.png",
-      "/assets/images/mushroom_007.png",
-      "/assets/images/mushroom_007.png",
-      "/assets/images/mushroom_008.png",
-      "/assets/images/mushroom_008.png",
+      "assets/images/mushroom_001.png",
+      "assets/images/mushroom_001.png",
+      "assets/images/mushroom_002.png",
+      "assets/images/mushroom_002.png",
+      "assets/images/mushroom_003.png",
+      "assets/images/mushroom_003.png",
+      "assets/images/mushroom_004.png",
+      "assets/images/mushroom_004.png",
+      "assets/images/mushroom_005.png",
+      "assets/images/mushroom_005.png",
+      "assets/images/mushroom_006.png",
+      "assets/images/mushroom_006.png",
+      "assets/images/mushroom_007.png",
+      "assets/images/mushroom_007.png",
+      "assets/images/mushroom_008.png",
+      "assets/images/mushroom_008.png",
    ];
 
    //Randomise array of icons//
@@ -171,30 +171,30 @@ function medium() {
    reset();
    nonewgame();
    var mushroomsmed = [
-      "/assets/images/mushroom_2_001.png",
-      "/assets/images/mushroom_2_001.png",
-      "/assets/images/mushroom_2_002.png",
-      "/assets/images/mushroom_2_002.png",
-      "/assets/images/mushroom_2_003.png",
-      "/assets/images/mushroom_2_003.png",
-      "/assets/images/mushroom_2_004.png",
-      "/assets/images/mushroom_2_004.png",
-      "/assets/images/mushroom_2_005.png",
-      "/assets/images/mushroom_2_005.png",
-      "/assets/images/mushroom_2_006.png",
-      "/assets/images/mushroom_2_006.png",
-      "/assets/images/mushroom_2_007.png",
-      "/assets/images/mushroom_2_007.png",
-      "/assets/images/mushroom_2_008.png",
-      "/assets/images/mushroom_2_008.png",
-      "/assets/images/mushroom_2_009.png",
-      "/assets/images/mushroom_2_009.png",
-      "/assets/images/mushroom_2_010.png",
-      "/assets/images/mushroom_2_010.png",
-      "/assets/images/mushroom_2_011.png",
-      "/assets/images/mushroom_2_011.png",
-      "/assets/images/mushroom_2_012.png",
-      "/assets/images/mushroom_2_012.png",
+      "assets/images/mushroom_2_001.png",
+      "assets/images/mushroom_2_001.png",
+      "assets/images/mushroom_2_002.png",
+      "assets/images/mushroom_2_002.png",
+      "assets/images/mushroom_2_003.png",
+      "assets/images/mushroom_2_003.png",
+      "assets/images/mushroom_2_004.png",
+      "assets/images/mushroom_2_004.png",
+      "assets/images/mushroom_2_005.png",
+      "assets/images/mushroom_2_005.png",
+      "assets/images/mushroom_2_006.png",
+      "assets/images/mushroom_2_006.png",
+      "assets/images/mushroom_2_007.png",
+      "assets/images/mushroom_2_007.png",
+      "assets/images/mushroom_2_008.png",
+      "assets/images/mushroom_2_008.png",
+      "assets/images/mushroom_2_009.png",
+      "assets/images/mushroom_2_009.png",
+      "assets/images/mushroom_2_010.png",
+      "assets/images/mushroom_2_010.png",
+      "assets/images/mushroom_2_011.png",
+      "assets/images/mushroom_2_011.png",
+      "assets/images/mushroom_2_012.png",
+      "assets/images/mushroom_2_012.png",
    ];
 
    //Randomise array of icons//
@@ -227,36 +227,36 @@ function hard() {
    reset();
    nonewgame();
    var mushroomshard = [
-      "/assets/images/medium_001.png",
-      "/assets/images/medium_001.png",
-      "/assets/images/medium_002.png",
-      "/assets/images/medium_002.png",
-      "/assets/images/medium_003.png",
-      "/assets/images/medium_003.png",
-      "/assets/images/medium_004.png",
-      "/assets/images/medium_004.png",
-      "/assets/images/medium_005.png",
-      "/assets/images/medium_005.png",
-      "/assets/images/medium_006.png",
-      "/assets/images/medium_006.png",
-      "/assets/images/medium_007.png",
-      "/assets/images/medium_007.png",
-      "/assets/images/medium_008.png",
-      "/assets/images/medium_008.png",
-      "/assets/images/medium_009.png",
-      "/assets/images/medium_009.png",
-      "/assets/images/medium_010.png",
-      "/assets/images/medium_010.png",
-      "/assets/images/medium_011.png",
-      "/assets/images/medium_011.png",
-      "/assets/images/medium_012.png",
-      "/assets/images/medium_012.png",
-      "/assets/images/medium_013.png",
-      "/assets/images/medium_013.png",
-      "/assets/images/medium_014.png",
-      "/assets/images/medium_014.png",
-      "/assets/images/medium_015.png",
-      "/assets/images/medium_015.png",
+      "assets/images/medium_001.png",
+      "assets/images/medium_001.png",
+      "assets/images/medium_002.png",
+      "assets/images/medium_002.png",
+      "assets/images/medium_003.png",
+      "assets/images/medium_003.png",
+      "assets/images/medium_004.png",
+      "assets/images/medium_004.png",
+      "assets/images/medium_005.png",
+      "assets/images/medium_005.png",
+      "assets/images/medium_006.png",
+      "assets/images/medium_006.png",
+      "assets/images/medium_007.png",
+      "assets/images/medium_007.png",
+      "assets/images/medium_008.png",
+      "assets/images/medium_008.png",
+      "assets/images/medium_009.png",
+      "assets/images/medium_009.png",
+      "assets/images/medium_010.png",
+      "assets/images/medium_010.png",
+      "assets/images/medium_011.png",
+      "assets/images/medium_011.png",
+      "assets/images/medium_012.png",
+      "assets/images/medium_012.png",
+      "assets/images/medium_013.png",
+      "assets/images/medium_013.png",
+      "assets/images/medium_014.png",
+      "assets/images/medium_014.png",
+      "assets/images/medium_015.png",
+      "assets/images/medium_015.png",
    ];
 
    //Randomise array of icons//
@@ -286,22 +286,22 @@ function hard() {
 //Function to change background image//
 function spring() {
    document.body.style.backgroundImage = 'url("null")';
-   document.body.style.backgroundImage = 'url("/assets/images/spring.webp")';
+   document.body.style.backgroundImage = 'url("assets/images/spring.webp")';
 }
 
 function summer() {
    document.body.style.backgroundImage = 'url("null")';
-   document.body.style.backgroundImage = 'url("/assets/images/summer.webp")';
+   document.body.style.backgroundImage = 'url("assets/images/summer.webp")';
 }
 
 function autumn() {
    document.body.style.backgroundImage = 'url("null")';
-   document.body.style.backgroundImage = 'url("/assets/images/autumn.webp")';
+   document.body.style.backgroundImage = 'url("assets/images/autumn.webp")';
 }
 
 function winter() {
    document.body.style.backgroundImage = 'url("null")';
-   document.body.style.backgroundImage = 'url("/assets/images/winter.webp")';
+   document.body.style.backgroundImage = 'url("assets/images/winter.webp")';
 }
 
 
