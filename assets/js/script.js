@@ -38,6 +38,7 @@ function newgame() {
       img.className = "icon";
       img.addEventListener("click", flipCard);
       img.style.cursor = "pointer";
+      img.draggable = false;
       gamegrid.appendChild(img);
       return;
    });
@@ -213,6 +214,7 @@ function medium() {
       img.height = "110";
       img.width = "110";
       img.className = "icon";
+      img.draggable = false;
       img.addEventListener("click", flipCard);
       gamegrid.appendChild(img);
       return;
@@ -274,6 +276,7 @@ function hard() {
       img.height = "110";
       img.width = "110";
       img.className = "icon";
+      img.draggable = false;
       img.addEventListener("click", flipCard);
       gamegrid.appendChild(img);
       return;
