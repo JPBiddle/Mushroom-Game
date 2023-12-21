@@ -134,7 +134,7 @@ function end() {
     console.log(finishGame.length);
     if (finishGame.length == 0) {
         setTimeout(function () {
-            alert("end");
+            congratulations();
         }, 500);
         setTimeout(function () {
             reset();

@@ -43,3 +43,11 @@ function closeModal(modal) {
     modal.classList.remove("active");
     overlay.classList.remove("active");
 }
+
+
+function congratulations() {
+    const congrats = document.querySelector("#modal-congrats");
+    console.log(congrats);
+    congrats.classList.add("active");
+    overlay.classList.add("active");
+}

@@ -78,17 +78,22 @@ body {
 }
 
 .rules {
-    padding: 0;
+    padding-left: 0;
+    width: -webkit-fill-available;
+    text-align: center;
 }
 
 .difficulty {
+    width: -webkit-fill-available;
+    text-align: center;
     padding: 0;
 }
 
 .reset {
+    text-align: center;
     outline: none;
     padding: 0;
-    margin-left: 10%;
+    width: -webkit-fill-available;
 }
 
 
