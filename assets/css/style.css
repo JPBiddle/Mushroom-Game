@@ -294,7 +294,7 @@ body {
     border: none;
     border-radius: 10px;
     z-index: 10;
-    background-color: white;
+    background-color: rgba(56, 185, 127, 0.9);
     width: 500px;
     max-width: 80%;
 }
@@ -308,6 +308,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: none;
 }
 
 .modal-header .title {
@@ -319,11 +320,22 @@ body {
     border: none;
     outline: none;
     background: none;
-    font-weight: 30px;
+    font-size: 50px;
+    font-family: "Gloria Hallelujah",
+        "sans-serif";
+    color: white;
+
 }
 
 modal-body {
     padding: 10px, 15px;
+}
+
+#rulestext {
+    font-family: "Gloria Hallelujah",
+        "sans-serif";
+    color: white;
+    letter-spacing: 1px;
 }
 
 #overlay {
@@ -341,4 +353,11 @@ modal-body {
 #overlay.active {
     pointer-events: all;
     opacity: 1;
+}
+
+.title {
+    text-align: center;
+    font-family: "shizuru", "Quicksand", "sans-serif";
+    letter-spacing: 8px;
+    color: white;
 }
