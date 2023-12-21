@@ -153,14 +153,15 @@ body {
     font-family: "Gloria Hallelujah", "sans-serif";
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 700px) {
     .backgroundchange {
-        position: absolute;
+        position: relative;
         margin-left: auto;
         margin-right: auto;
         left: 0;
         right: 0;
-        bottom: 1%;
+        bottom: 0;
+        top: 40%;
         z-index: 5;
         text-align: center;
         font-family: "Gloria Hallelujah", "sans-serif";
@@ -186,7 +187,11 @@ body {
         display: grid;
         grid-template-columns: repeat(4, 60px);
         grid-template-rows: repeat(4, 60px);
-        padding-top: 5%;
+        position: fixed;
+            top: 35%;
+            left: 0;
+            right: 0;
+            bottom: 0;
     }
 }
 
@@ -208,6 +213,11 @@ body {
         grid-template-columns: repeat(4, 60px);
         grid-template-rows: repeat(6, 60px);
         padding-top: 5%;
+        position: fixed;
+            top: 28%;
+            left: 0;
+            right: 0;
+            bottom: 0;
     }
 }
 
@@ -230,6 +240,11 @@ body {
         grid-template-columns: repeat(5, 60px);
         grid-template-rows: repeat(6, 60px);
         padding-top: 5%;
+        position: fixed;
+            top: 28%;
+            left: 0;
+            right: 0;
+            bottom: 0;
     }
 }
 
