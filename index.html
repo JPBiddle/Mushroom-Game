@@ -1,140 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Nanum+Pen+Script&family=Shizuru&display=swap"
-      rel="stylesheet"
-    />
-
+        href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Nanum+Pen+Script&family=Shizuru&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <script src="/assets/js/script.js"></script>
-
     <!--FontAwesome-->
-    <script
-      src="https://kit.fontawesome.com/ba6cdc6122.js"
-      crossorigin="anonymous"
-    ></script>
-
+    <script src="https://kit.fontawesome.com/ba6cdc6122.js" crossorigin="anonymous"></script>
+    <!--Title and favicon -->
     <title>Matching Mushroom Mini Game</title>
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png" />
-  </head>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+</head>
 
-  <body onload="newgame()">
+<body onload="newgame()">
+    <!--Site music-->
     <audio id="soundtrack">
-      <source src="/assets/audio/soundtrack.mp3" type="audio/mpeg" />
+        <source src="/assets/audio/soundtrack.mp3" type="audio/mpeg">
     </audio>
-    <div>
-      <h1 class="site-head">Matching Mushrooms</h1>
-      <nav class="navbar">
-          <ul class="nav-style">
-            <ul class="rules">
-              <button data-modal-target="#modal" id="newgamereset">
-                Rules
-              </button>
-            </ul>
-            <ul class="reset">
-              <button type="button" id="newgamereset" onclick="reset()">
-                Reset
-              </button>
-            </ul>
-            <ul class="difficulty">
-              <button type="button" id="newgame" onclick="reset()">Easy</button>
-              <button type="button" id="newgame" onclick="medium()">
-                Medium
-              </button>
-              <button type="button" id="newgame" onclick="hard()">Hard</button>
-            </ul>
-          </ul>
-      </nav>
-    </div>
+    <!--Site Header-->
+        <h1 class="site-head">Matching Mushrooms</h1>
+        <!--Navigation buttons-->
+        <nav class="navbar">
+            <div class="nav-style">
+                <div class="rules">
+                    <span><button data-modal-target="#modal" class="newgamereset">
+                            Rules
+                        </button></span>
+                </div>
+                <div class="reset">
+                    <span style="display: contents"><button type="button" class="newgamereset" onclick="reset()">
+                            Reset
+                        </button></span>
+                </div>
+                <div class="difficulty">
+                    <span class="difficultbtn"><button type="button" class="newgame" onclick="reset()">
+                            Easy
+                        </button></span>
+                    <span class="difficultbtn"><button type="button" class="newgame" onclick="medium()">
+                            Medium
+                        </button></span>
+                    <span class="difficultbtn"><button type="button" class="newgame" onclick="hard()">
+                            Hard
+                        </button></span>
+                </div>
+            </div>
+        </nav>
+    <!--Mute audio button-->
     <button type="button" id="mute" onclick="mute()">
-      <i class="fa-solid fa-volume-xmark fa-xl" style="color: #4b4c4e"></i>
+        <i class="fa-solid fa-volume-xmark fa-xl" style="color: #4b4c4e"></i>
     </button>
+    <!--Background change radio buttons-->
     <div class="backgroundchange">
-      <input
-        type="radio"
-        id="spring"
-        name="background"
-        value="spring"
-        onclick="spring()"
-        ;
-        checked
-      />
-      <label for="spring" class="bckbtn">Spring</label>
-      <input
-        type="radio"
-        id="summer"
-        name="background"
-        value="summer"
-        onclick="summer();"
-      />
-      <label for="summer" class="bckbtn">Summer</label>
-      <input
-        type="radio"
-        id="autumn"
-        name="background"
-        value="autumn"
-        onclick="autumn();"
-      />
-      <label for="autumn" class="bckbtn">Autumn</label>
-      <input
-        type="radio"
-        id="winter"
-        name="background"
-        value="winter"
-        onclick="winter();"
-      />
-      <label for="winter" class="bckbtn">Winter</label>
+        <input type="radio" id="spring" name="background" value="spring" onclick="spring()" checked>
+        <label for="spring" class="bckbtn">Spring</label>
+        <input type="radio" id="summer" name="background" value="summer" onclick="summer()">
+        <label for="summer" class="bckbtn">Summer</label>
+        <input type="radio" id="autumn" name="background" value="autumn" onclick="autumn()">
+        <label for="autumn" class="bckbtn">Autumn</label>
+        <input type="radio" id="winter" name="background" value="winter" onclick="winter()">
+        <label for="winter" class="bckbtn">Winter</label>
     </div>
-
-    <div class="modal-rules" id="modal">
-      <div class="modal-header">
-        <div class="title">
-          <h1>Rules</h1>
+    <!--Modal for rules-->
+    <div class="modal-game" id="modal">
+        <div class="modal-header">
+            <div class="title">
+                <h1>Rules</h1>
+            </div>
+            <button data-close-button class="close-button">&times;</button>
         </div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body" id="rulestext">
-        Welcome to Matching Mushrooms! <br />
-        Click the icons in the grid to reveal a hidden mushroom - explore the
-        grid to find a matching pair. <br />
-        When all matching pairs are gathered you will have completed the level!
-        <br />
-        Challenge yourself to harder difficulties and see how many pairs you can
-        find!
-      </div>
+        <div class="modal-body rulestext">
+            Welcome to Matching Mushrooms! <br>
+            Click the icons in the grid to reveal a hidden mushroom - explore the
+            grid to find a matching pair. <br>
+            When all matching pairs are gathered you will have completed the level!
+            <br>
+            Challenge yourself to harder difficulties and see how many pairs you can
+            find!
+        </div>
     </div>
-
-    <div class="modal-rules" id="modal-congrats">
-      <div class="modal-header">
-        <div class="title">
-          <h1>Well done!</h1>
+    <!--Modal for end of game-->
+    <div class="modal-game" id="modal-congrats">
+        <div class="modal-header">
+            <div class="title">
+                <h1>Well done!</h1>
+            </div>
+            <button data-close-button class="close-button">&times;</button>
         </div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body" id="rulestext">
-        You have successfully found all matching mushrooms! If you haven't
-        already, try the more challenging difficulties and see how you do...
-      </div>
+        <div class="modal-body rulestext">
+            You have successfully found all matching mushrooms! If you haven't
+            already, try the more challenging difficulties and see how you do...
+        </div>
     </div>
     <div id="overlay"></div>
-  </body>
-  <script src="/assets/js/modal.js"></script>
+    <script src="/assets/js/modal.js"></script>
+</body>
+
 </html>
