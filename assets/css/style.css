@@ -78,6 +78,11 @@ body {
 .newgame:focus {
     background-color: rgb(31 153 239 / 65%);
 }
+/* active added for mobile use*/
+
+.newgame:active {
+    background-color: rgb(31 153 239 / 65%);
+}
 
 /* Navigation bar style */
 

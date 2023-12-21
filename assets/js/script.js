@@ -62,9 +62,7 @@ function flipCard() {
       return;
    }
    secondClicked = this;
-   // beenClicked = false;
    checkForMatch();
-   // return;
 }
 
 //Function to check for a match//
@@ -91,7 +89,7 @@ function checkForMatch() {
          secondClicked.classList?.add("icon");
          noThirdClick = false;
          resetBoard();
-      }, 750);
+      }, 400);
    }
 }
 
