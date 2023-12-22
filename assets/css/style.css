@@ -54,19 +54,14 @@ body {
     margin-bottom: 5px;
 }
 
-.newgame:active {
-    outline: none;
-    border: none;
-    background: rgb(0, 0, 0, 0.4);
-    border-radius: 7px;
-}
-
 .newgamereset {
     outline: none;
     border: none;
     background: rgb(0, 0, 0, 0.2);
     border-radius: 7px;
 }
+
+/* active and focus added for mobile use*/
 
 .newgamereset:active {
     outline: none;
@@ -75,14 +70,23 @@ body {
     border-radius: 7px;
 }
 
+.newgamereset:focus {
+    outline: none;
+    border: none;
+    background: rgb(0, 0, 0, 0.4);
+    border-radius: 7px;
+}
+
 .newgame:focus {
     background-color: rgb(31 153 239 / 65%);
+    outline: none;
 }
-/* active added for mobile use*/
 
 .newgame:active {
     background-color: rgb(31 153 239 / 65%);
+    outline: none;
 }
+
 
 /* Navigation bar style */
 
