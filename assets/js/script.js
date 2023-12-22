@@ -39,6 +39,7 @@ function newgame() {
       img.addEventListener("click", flipCard);
       img.style.cursor = "pointer";
       img.draggable = false;
+      img.alt = "Mushroom Icon"
       img.style.filer = "filter: drop - shadow(2px 1px 2px rgba(0, 0, 0, 0.4))";
       gamegrid.appendChild(img);
       return;
@@ -217,6 +218,7 @@ function medium() {
       img.width = "110";
       img.className = "icon";
       img.draggable = false;
+      img.alt = "Mushroom Icon"
       img.style.filer = "filter: drop - shadow(2px 1px 2px rgba(0, 0, 0, 0.4))";
       img.addEventListener("click", flipCard);
       gamegrid.appendChild(img);
@@ -280,6 +282,7 @@ function hard() {
       img.width = "110";
       img.className = "icon";
       img.draggable = false;
+      img.alt = "Mushroom Icon"
       img.style.filer = "filter: drop - shadow(2px 1px 2px rgba(0, 0, 0, 0.4))";
       img.addEventListener("click", flipCard);
       gamegrid.appendChild(img);
