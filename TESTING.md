@@ -52,6 +52,32 @@
 Extensive testing was conducted manually to ensure the game was working correctly across various screen sizes.
 With every screen size (mobile, tablet and desktop), every function was tested. Below are screenshots of the testing in progress. Although functions such as theme will not show every background, they were all tested on each screen.
 
+The first test was to ensure the flip function worked and that only two icons can be revealed at a time
+
+<details>
+
+<summary>Revealed desktop</summary>
+
+![Revealed desktop](assets/testing-images/mushroom-desk.png)
+
+</details>
+
+<details>
+
+<summary>Revealed tablet</summary>
+
+![Revealed tablet](assets/testing-images/mushroom-tab.png)
+
+</details>
+
+<details>
+
+<summary>Revealed tablet</summary>
+
+![Revealed tablet](assets/testing-images/mushroom-mobile.png)
+
+</details>
+
 Every screen size was tested for matching pairs
 
 <details>
@@ -156,7 +182,7 @@ The rules were checked on every screen size
 
 </details>
 
-Difficulty modes were also all tested
+Difficulty modes were also all tested - easy is not screenshotted but was tested as the default
 
 <details>
 
@@ -189,6 +215,50 @@ Difficulty modes were also all tested
 ![Hard tablet](assets/testing-images/hard-tab.png)
 
 </details>
+
+<details>
+
+<summary>Medium Mode Mobile</summary>
+
+![Medium mobile](assets/testing-images/med-mob.png)
+
+</details>
+
+<details>
+
+<summary>Hard Mode Mobile</summary>
+
+![Hard mobile](assets/testing-images/hard-mob.png)
+
+</details>
+
+When the game was complete, the end game function was tested
+
+<details>
+
+<summary>End Game Desktop</summary>
+
+![End Desktop](assets/testing-images/congrats-desk.png)
+
+</details>
+
+<details>
+
+<summary>End Game Tablet</summary>
+
+![End tablet](assets/testing-images/congrats-tab.png)
+
+</details>
+
+<details>
+
+<summary>End Game Mobile</summary>
+
+![End mobile](assets/testing-images/congrats-mob.png)
+
+</details>
+
+Music functionality was confirmed to be working correctly as well.
 
 ---
 
