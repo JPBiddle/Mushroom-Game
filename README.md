@@ -19,15 +19,13 @@
 
 ## Introduction
 
-Matching Mushrooms is a memory mini game designed to train the users memory to improve cognitave performance while also being an enjoyable, whimsical yet competitive game. 
+Matching Mushrooms is a memory mini game designed to train the users memory to improve cognitave performance while also being an enjoyable, whimsical yet competitive game.
 
 The game is designed to be simple in nature, as the user is advised to focus on the memory part of the game and therefore simple is better - to avoid distractions.
 
 This was the second Milestone Projects as part of my course at the Code Institute. The main requirements were to make an interactive and responsive website with HTML5, CSS and JavaScript.
 
-
-
-***
+---
 
 ## UX
 
@@ -40,7 +38,7 @@ The aim for me is to create a website that appeals to:
 
 ### User Stories
 
-#### New Users 
+#### New Users
 
 - As a new user, I want to find instructions on how to use the site easily.
 - As a new user, I want the game to be engaging, beautifully designed and visually attractive.
@@ -52,7 +50,7 @@ The aim for me is to create a website that appeals to:
 - As a current user, I want to be able to play the game more than once and have a different experience the second time.
 - As a current user, I want to have the option of playing the game with different difficulty settings.
 
-***
+---
 
 ## Development Planes
 
@@ -63,11 +61,13 @@ To create a game that will answer all of the user stories and will function as d
 The strategy was broken down by focussing on the essential elements of the game, as well as the different types of users that would access the game and what they will expect and want.
 
 - roles
+
   - Current users
   - New Users
   - Users looking for a fun experience
 
 - Demographic
+
   - All ages, typically children and people of learning ages
   - Residing in the UK or USA (English spoken)
   - An interest in games
@@ -104,19 +104,21 @@ With this in mind I have produced a short diagram representing the viability of 
 <summary>Viability chart</summary>
 
 ![viability](assets/readme-files/Mushroom_viability.jpg)
+
 </details>
 
 [Back to top](#matching-mushrooms)
 
-***
+---
 
 ### Scope
 
 Based on the requirements of the Strategy plane, I have identified two categories.
 
 - Content Requirements:
+
   - At least one array of mushroom icons for a game to be played
-  - A colourful style with interesting images 
+  - A colourful style with interesting images
   - Music that suits the content
 
 - Function Requirements:
@@ -126,13 +128,13 @@ Based on the requirements of the Strategy plane, I have identified two categorie
   - The ability to read a rules card
   - A message of congratulations at the end of the game
 
-***
+---
 
 ### Structure
 
 Based on the information so far, I intend to have a single page structure where the entire game can be played, reset and controlled. This is important to keep the functionality clear and simple, therefore being more enjoyable to use.
 
-***
+---
 
 ### Skeleton
 
@@ -143,19 +145,20 @@ Wireframes were produced using balsamiq. These will showcase the site as intende
 <summary>Wireframes</summary>
 
 ![viability](assets/readme-files/Mushroom-wireframe.png)
+
 </details>
 
-***
+---
 
 ### Surface
 
-The majority of the colour will come from time background image, leaving the rest of the content to be styled being mostly buttons. 
+The majority of the colour will come from time background image, leaving the rest of the content to be styled being mostly buttons.
 
 The background will have four themes, one for each season. There is a theme of nature to the game, so this is fitting.
 
 As each background will have a different colour, the rest of the colors must be versatile - therefore the text will be either black or white, with the black having a subtle opacity to turn slightly grey.
 
-The rules and congratulations modal will be green, again to fit with the nature theme. 
+The rules and congratulations modal will be green, again to fit with the nature theme.
 
 With the buttons, headers and text colours decided, the last colour will be a sky blue to indicate a button has been pressed.
 
@@ -163,6 +166,7 @@ With the buttons, headers and text colours decided, the last colour will be a sk
 <summary>Colour Palette</summary>
 
 ![viability](assets/readme-files/palette.png)
+
 </details>
 
 ### Typography
@@ -177,7 +181,7 @@ All imagery will be purchased from sellers on Etsy, credit will be listed at the
 
 [Back to top](#matching-mushrooms)
 
-***
+---
 
 ## Features
 
@@ -186,15 +190,15 @@ A row of radio buttons will be at the bottom of the page to change background th
 The design of the page closely follows the wireframes.
 The game will be presented in the centre of the page, taking up the most space.
 
-***
+---
 
 ### Reset
 
 The reset function will be in the centre of the buttons at the top of the page.
 
-This function will remove the array of mushrooms, reshuffle them and then place them back into the DOM, hidden again. 
+This function will remove the array of mushrooms, reshuffle them and then place them back into the DOM, hidden again.
 
-***
+---
 
 ### Rules
 
@@ -204,7 +208,7 @@ The modal will have an overlay to reduce the visibility of the rest of the page.
 
 The modal will have a close button for when the user is finished with the modal.
 
-*** 
+---
 
 ### Difficulty setting
 
@@ -216,7 +220,7 @@ The grids with more cards to flip will have to be adjusted to fit on small scree
 
 The higher the difficulty chosen, the more pairs you will have to match.
 
-***
+---
 
 ### Themes
 
@@ -224,7 +228,7 @@ The theme selector will be a simple function that removes the current background
 
 The radio button will highlight which season is chosen with a check.
 
-***
+---
 
 ### Mushroom images
 
@@ -234,7 +238,7 @@ On page load an array of the easy mushrooms will be generated.
 
 When clicked, a card will reveal a mushroom and a second click will reveal another. Three cards cannot be revealed at one time.
 
-***
+---
 
 ### Match function
 
@@ -242,7 +246,7 @@ When two mushrooms that match are revealed, their original class which hid the m
 
 Double clicking the first mushroom will not trigger a match.
 
-***
+---
 
 ### Game complete
 
@@ -250,7 +254,7 @@ When all the mushrooms are matched, a function will call to get the length of th
 
 This will tell the user they have completed the game and encourage them to try harder levels.
 
-*** 
+---
 
 ### Future features
 
@@ -262,7 +266,7 @@ Due to time constraints I was unable to implement the following functions, howev
 
 [Back to top](#matching-mushrooms)
 
-***
+---
 
 ## Issues and Bugs
 
@@ -274,7 +278,7 @@ When creating the flip function to reveal my card, I was able to add a class to 
 
 Some icons were remaining hidden if they were adjacent to the icon that was previously clicked. This was because of a media query that was keeping the grid size and image size different to one another and therefore the click box was not as it was supposed to be. By adjusting the CSS of the grid I was able to resolve this.
 
-### Music not  playing
+### Music not playing
 
 I was struggling to get my music to play onload. Tutor jason sent a document explaining the DOM often wont allow this, but I was able to navigate a workaround by implementing a function that began the music when the user clicks anything for the first time.
 
@@ -284,14 +288,13 @@ I found after creating the modals in HTML and Javascript they still wouldnt appe
 
 ### Modals preventing the icon array from loading
 
-The first problem I had with the modals was that it caused my onload  functions to break and not run. The simplest answer was to place the code into a seperat js file as the code was becoming crowded anyway.
+The first problem I had with the modals was that it caused my onload functions to break and not run. The simplest answer was to place the code into a seperat js file as the code was becoming crowded anyway.
 
-
-***
+---
 
 ## Technologies Used
 
-***
+---
 
 ### Main Languages Used
 
@@ -322,24 +325,23 @@ The first problem I had with the modals was that it caused my onload  functions 
 - Youtube
   - I used extensively whenever I ran into a problem or something I had not done before such as creating modals.
 
-***
+---
 
 ## Testing
 
 Please view full testing document [here](https://github.com/JPBiddle/Mushroom-Game/blob/main/TESTING.md)
 
-
-***
+---
 
 ## Deployment
 
-***
+---
 
 This project was developed using CodeAnywhere and was then committed to GitHub using the GitPod terminal.
 
 ### Deploying
 
-***
+---
 
 To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 
@@ -351,11 +353,11 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 - Upon selection, the page will automatically refresh meaning that the website is now deployed.
 - Scroll back down to the "Pages" section to find the deployed link.
 
-***
+---
 
 ## Credits
 
-***
+---
 
 - Etsy users for mushroom icons - "ClipartCraftArt", "SileamDigital" and "DigitalDreamscaping"
 - Etsy user "PeDeDesigns" for the backgrounds
@@ -364,11 +366,11 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 - marina-ferreira on GitHub for her guide on making a matching card game,and tutor Joanna for showing me the guide
 - w3schools, which I used to find how to implement audio, as well as reminders of code I have learnt at code institute
 
-***
+---
 
 ## Acknowledgements
 
-***
+---
 
 - I would like to thank my family and friends for helping with testing and developing the user experience.
 - I Would like to thank my mentor, Seun, for their guidance and experience, and my tutors, Jason and Joanne for helping me with any difficulties with bugs.
@@ -376,9 +378,4 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 
 [Back to top](#matching-mushrooms)
 
-***
-
-
-
-
-
+---
