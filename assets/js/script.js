@@ -93,7 +93,7 @@ function checkForMatch() {
          secondClicked.classList.add("icon");
          noThirdClick = false;
          resetBoard();
-      }, 400);
+      }, 900);
    }
 }
 
