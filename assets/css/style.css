@@ -49,7 +49,7 @@ body {
 }
 
 @media only screen and (device-width: 768px),
-only screen and (max-width: 1194px) {
+only screen and (max-width: 1000px) {
     .site-head {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -182,7 +182,7 @@ only screen and (max-width: 1194px) {
 }
 
 @media only screen and (device-width: 768px),
-only screen and (max-width: 1194px) {
+only screen and (max-width: 1000px) {
     .backgroundchange {
         width: inherit;
         position: fixed;
@@ -210,7 +210,7 @@ only screen and (max-width: 1194px) {
 }
 
 @media only screen and (device-width: 768px),
-only screen and (max-width: 1194px) {
+only screen and (max-width: 1000px) {
     .gamegrid {
         width: fit-content;
         gap: 10px;
@@ -236,7 +236,7 @@ only screen and (max-width: 1194px) {
 }
 
 @media only screen and (device-width: 768px),
-only screen and (max-width: 1194px) {
+only screen and (max-width: 1000px) {
     .gamegrid-medium {
         width: fit-content;
         gap: 10px;
@@ -264,7 +264,7 @@ only screen and (max-width: 1194px) {
 }
 
 @media only screen and (device-width: 768px),
-only screen and (max-width: 1194px) {
+only screen and (max-width: 1000px) {
     .gamegrid-hard {
         width: fit-content;
         gap: 10px;
@@ -294,7 +294,7 @@ only screen and (max-width: 1194px) {
 }
 
 @media only screen and (device-width: 768px),
-only screen and (max-width: 1194px) {
+only screen and (max-width: 1000px) {
     .icon {
         background-color: black;
         filter: contrast(0);
@@ -313,7 +313,7 @@ img {
 }
 
 @media only screen and (device-width: 768px),
-only screen and (max-width: 1194px) {
+only screen and (max-width: 1000px) {
     img {
         width: 60px;
         height: 60px;
@@ -322,7 +322,7 @@ only screen and (max-width: 1194px) {
 }
 
 @media only screen and (device-width: 768px),
-only screen and (max-width: 1194px) {
+only screen and (max-width: 1000px) {
 
     .revealed,
     .matched {
