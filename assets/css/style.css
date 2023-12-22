@@ -48,7 +48,7 @@ body {
     text-shadow: 0 0 black;
 }
 
-@media only screen and (device-width: 767px),
+@media only screen and (device-width: 768px),
 only screen and (max-width: 1024px) {
     .site-head {
         padding-top: 25px;
@@ -181,7 +181,7 @@ only screen and (max-width: 1024px) {
     font-family: "Gloria Hallelujah", "sans-serif";
 }
 
-@media only screen and (device-width: 767px),
+@media only screen and (device-width: 768px),
 only screen and (max-width: 1024px) {
     .backgroundchange {
         width: inherit;
@@ -209,7 +209,7 @@ only screen and (max-width: 1024px) {
     grid-template-rows: repeat(4, 110px);
 }
 
-@media only screen and (device-width: 767px),
+@media only screen and (device-width: 768px),
 only screen and (max-width: 1024px) {
     .gamegrid {
         width: fit-content;
@@ -235,7 +235,7 @@ only screen and (max-width: 1024px) {
     grid-template-rows: repeat(4, 110px);
 }
 
-@media only screen and (device-width: 767px),
+@media only screen and (device-width: 768px),
 only screen and (max-width: 1024px) {
     .gamegrid-medium {
         width: fit-content;
@@ -263,7 +263,7 @@ only screen and (max-width: 1024px) {
     grid-template-rows: repeat(5, 110px);
 }
 
-@media only screen and (device-width: 767px),
+@media only screen and (device-width: 768px),
 only screen and (max-width: 1024px) {
     .gamegrid-hard {
         width: fit-content;
@@ -293,7 +293,7 @@ only screen and (max-width: 1024px) {
     height: 110px;
 }
 
-@media only screen and (device-width: 767px),
+@media only screen and (device-width: 768px),
 only screen and (max-width: 1024px) {
     .icon {
         background-color: black;
@@ -312,7 +312,7 @@ img {
     filter: drop-shadow(2px 1px 2px rgba(0, 0, 0, 0.4));
 }
 
-@media only screen and (device-width: 767px),
+@media only screen and (device-width: 768px),
 only screen and (max-width: 1024px) {
     img {
         width: 60px;
@@ -321,7 +321,7 @@ only screen and (max-width: 1024px) {
     }
 }
 
-@media only screen and (device-width: 767px),
+@media only screen and (device-width: 768px),
 only screen and (max-width: 1024px) {
 
     .revealed,
