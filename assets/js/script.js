@@ -52,8 +52,9 @@ var secondClicked = ``;
 function flipCard() {
    if (noThirdClick) return;
    if (this === firstClicked) return;
-   this.classList.remove("icon");
    this.classList.add("revealed");
+   this.classList.remove("icon");
+
 
    //Assigning names for first and second clicked cards//
    if (!beenClicked) {
@@ -83,10 +84,10 @@ function checkForMatch() {
             noThirdClick = false;
             resetBoard();
          }
-         firstClicked.classList?.remove("revealed");
-         firstClicked.classList?.add("icon");
-         secondClicked.classList?.remove("revealed");
-         secondClicked.classList?.add("icon");
+         firstClicked.classList.remove("revealed");
+         firstClicked.classList.add("icon");
+         secondClicked.classList.remove("revealed");
+         secondClicked.classList.add("icon");
          noThirdClick = false;
          resetBoard();
       }, 400);
