@@ -166,7 +166,7 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        top: 93%;
+        top: 94%;
         z-index: 5;
         text-align: center;
         font-family: "Gloria Hallelujah", "sans-serif";
@@ -212,7 +212,7 @@ body {
 @media screen and (max-width: 700px) {
     .gamegrid-medium {
         width: fit-content;
-        gap: 6px;
+        gap: 10px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(4, 60px);
@@ -239,7 +239,7 @@ body {
 @media screen and (max-width: 700px) {
     .gamegrid-hard {
         width: fit-content;
-        gap: 4px;
+        gap: 10px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(5, 60px);
@@ -270,14 +270,6 @@ body {
         border-radius: 15px;
         opacity: 0.9;
         transition: 0.1s;
-        width: 60px;
-        height: 60px;
-    }
-}
-
-
-@media screen and (max-width: 580px) {
-    img {
         width: 60px;
         height: 60px;
     }

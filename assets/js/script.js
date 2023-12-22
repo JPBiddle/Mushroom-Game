@@ -52,8 +52,9 @@ var secondClicked = ``;
 function flipCard() {
    if (noThirdClick) return;
    if (this === firstClicked) return;
-   this.classList.add("revealed");
    this.classList.remove("icon");
+   this.classList.add("revealed");
+   
 
 
    //Assigning names for first and second clicked cards//
@@ -83,6 +84,7 @@ function checkForMatch() {
          if (firstClicked.classList.contains("matched")) {
             noThirdClick = false;
             resetBoard();
+            return;
          }
          firstClicked.classList.remove("revealed");
          firstClicked.classList.add("icon");
@@ -170,30 +172,30 @@ function medium() {
    reset();
    nonewgame();
    var mushroomsmed = [
-      "assets/images/mushroom_2_001.png",
-      "assets/images/mushroom_2_001.png",
-      "assets/images/mushroom_2_002.png",
-      "assets/images/mushroom_2_002.png",
-      "assets/images/mushroom_2_003.png",
-      "assets/images/mushroom_2_003.png",
-      "assets/images/mushroom_2_004.png",
-      "assets/images/mushroom_2_004.png",
-      "assets/images/mushroom_2_005.png",
-      "assets/images/mushroom_2_005.png",
-      "assets/images/mushroom_2_006.png",
-      "assets/images/mushroom_2_006.png",
-      "assets/images/mushroom_2_007.png",
-      "assets/images/mushroom_2_007.png",
-      "assets/images/mushroom_2_008.png",
-      "assets/images/mushroom_2_008.png",
-      "assets/images/mushroom_2_009.png",
-      "assets/images/mushroom_2_009.png",
-      "assets/images/mushroom_2_010.png",
-      "assets/images/mushroom_2_010.png",
-      "assets/images/mushroom_2_011.png",
-      "assets/images/mushroom_2_011.png",
-      "assets/images/mushroom_2_012.png",
-      "assets/images/mushroom_2_012.png",
+      "assets/images/medium001.png",
+      "assets/images/medium001.png",
+      "assets/images/medium002.png",
+      "assets/images/medium002.png",
+      "assets/images/medium003.png",
+      "assets/images/medium003.png",
+      "assets/images/medium004.png",
+      "assets/images/medium004.png",
+      "assets/images/medium005.png",
+      "assets/images/medium005.png",
+      "assets/images/medium006.png",
+      "assets/images/medium006.png",
+      "assets/images/medium007.png",
+      "assets/images/medium007.png",
+      "assets/images/medium008.png",
+      "assets/images/medium008.png",
+      "assets/images/medium009.png",
+      "assets/images/medium009.png",
+      "assets/images/medium010.png",
+      "assets/images/medium010.png",
+      "assets/images/medium011.png",
+      "assets/images/medium011.png",
+      "assets/images/medium012.png",
+      "assets/images/medium012.png",
    ];
 
    //Randomise array of icons//
@@ -226,36 +228,36 @@ function hard() {
    reset();
    nonewgame();
    var mushroomshard = [
-      "assets/images/medium_001.png",
-      "assets/images/medium_001.png",
-      "assets/images/medium_002.png",
-      "assets/images/medium_002.png",
-      "assets/images/medium_003.png",
-      "assets/images/medium_003.png",
-      "assets/images/medium_004.png",
-      "assets/images/medium_004.png",
-      "assets/images/medium_005.png",
-      "assets/images/medium_005.png",
-      "assets/images/medium_006.png",
-      "assets/images/medium_006.png",
-      "assets/images/medium_007.png",
-      "assets/images/medium_007.png",
-      "assets/images/medium_008.png",
-      "assets/images/medium_008.png",
-      "assets/images/medium_009.png",
-      "assets/images/medium_009.png",
-      "assets/images/medium_010.png",
-      "assets/images/medium_010.png",
-      "assets/images/medium_011.png",
-      "assets/images/medium_011.png",
-      "assets/images/medium_012.png",
-      "assets/images/medium_012.png",
-      "assets/images/medium_013.png",
-      "assets/images/medium_013.png",
-      "assets/images/medium_014.png",
-      "assets/images/medium_014.png",
-      "assets/images/medium_015.png",
-      "assets/images/medium_015.png",
+      "assets/images/hard001.png",
+      "assets/images/hard001.png",
+      "assets/images/hard002.png",
+      "assets/images/hard002.png",
+      "assets/images/hard003.png",
+      "assets/images/hard003.png",
+      "assets/images/hard004.png",
+      "assets/images/hard004.png",
+      "assets/images/hard005.png",
+      "assets/images/hard005.png",
+      "assets/images/hard006.png",
+      "assets/images/hard006.png",
+      "assets/images/hard007.png",
+      "assets/images/hard007.png",
+      "assets/images/hard008.png",
+      "assets/images/hard008.png",
+      "assets/images/hard009.png",
+      "assets/images/hard009.png",
+      "assets/images/hard010.png",
+      "assets/images/hard010.png",
+      "assets/images/hard011.png",
+      "assets/images/hard011.png",
+      "assets/images/hard012.png",
+      "assets/images/hard012.png",
+      "assets/images/hard013.png",
+      "assets/images/hard013.png",
+      "assets/images/hard014.png",
+      "assets/images/hard014.png",
+      "assets/images/hard015.png",
+      "assets/images/hard015.png",
    ];
 
    //Randomise array of icons//
