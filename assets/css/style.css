@@ -18,7 +18,7 @@ html {
 /* Body background image */
 
 body {
-    background-image:none;
+    background-image: none;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     min-height: 100%;
@@ -162,7 +162,8 @@ body {
     font-family: "Gloria Hallelujah", "sans-serif";
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (device-width: 768px),
+only screen and (max-width: 768px) {
     .backgroundchange {
         position: fixed;
         margin-left: auto;
@@ -188,7 +189,8 @@ body {
     grid-template-rows: repeat(4, 110px);
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (device-width: 768px),
+only screen and (max-width: 768px) {
     .gamegrid {
         width: fit-content;
         gap: 10px;
@@ -197,10 +199,10 @@ body {
         grid-template-columns: repeat(4, 60px);
         grid-template-rows: repeat(4, 60px);
         position: fixed;
-            top: 35%;
-            left: 0;
-            right: 0;
-            bottom: 0;
+        top: 35%;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }
 
@@ -213,7 +215,8 @@ body {
     grid-template-rows: repeat(4, 110px);
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (device-width: 768px),
+only screen and (max-width: 768px) {
     .gamegrid-medium {
         width: fit-content;
         gap: 10px;
@@ -223,10 +226,10 @@ body {
         grid-template-rows: repeat(6, 60px);
         padding-top: 5%;
         position: fixed;
-            top: 29%;
-            left: 0;
-            right: 0;
-            bottom: 0;
+        top: 29%;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }
 
@@ -240,7 +243,8 @@ body {
     grid-template-rows: repeat(5, 110px);
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (device-width: 768px),
+only screen and (max-width: 768px) {
     .gamegrid-hard {
         width: fit-content;
         gap: 10px;
@@ -250,10 +254,10 @@ body {
         grid-template-rows: repeat(6, 60px);
         padding-top: 5%;
         position: fixed;
-            top: 28%;
-            left: 0;
-            right: 0;
-            bottom: 0;
+        top: 28%;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 }
 
@@ -269,7 +273,8 @@ body {
     height: 110px;
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (device-width: 768px),
+only screen and (max-width: 768px) {
     .icon {
         background-color: black;
         filter: contrast(0);
@@ -287,7 +292,8 @@ img {
     filter: drop-shadow(2px 1px 2px rgba(0, 0, 0, 0.4));
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (device-width: 768px),
+only screen and (max-width: 768px) {
     img {
         width: 60px;
         height: 60px;
