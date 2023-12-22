@@ -289,8 +289,8 @@ body {
 .revealed,
 .matched {
     transform: rotateY(180deg);
-    background: none;
-    filter: none;
+    background: unset;
+    filter: unset;
     border-radius: 15px;
     opacity: 1.0;
     transition: 0.1s;

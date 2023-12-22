@@ -52,8 +52,8 @@ var secondClicked = ``;
 function flipCard() {
    if (noThirdClick) return;
    if (this === firstClicked) return;
-   this.classList.toggle("icon");
-   this.classList.toggle("revealed");
+   this.classList.remove("icon");
+   this.classList.add("revealed");
    
 
 
