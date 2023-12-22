@@ -34,7 +34,51 @@ The aim for me is to create a website that appeals to:
 
 ### Development Planes
 
+#### Strategy
 
+The strategy was broken down by focussing on the essential elements of the game, as well as the different types of users that would access the game and what they will expect and want.
 
+- roles
+  - Current users
+  - New Users
+  - Users looking for a fun experience
 
+- Demographic
+  - All ages, typically children and people of learning ages
+  - Residing in the UK or USA (English spoken)
+  - An interest in games
+  - Looking to improve memory
+
+- Psychographic
+  - Lifestyles
+    - Enjoys playing games
+    - Wishes to improve cognitave performance
+    - Enjoys whimsical aesthetic
+  - Personality and Attitudes
+    - Creative
+    - Open minded
+- Values
+  - Interested in new games
+  - Interested in creator led content
+
+This game needs to enable the user to:
+
+- Play the game seamlessly without becoming stuck on a function of the game
+- Be easily replayable
+- Have rules that are easy to understand
+- Be easy to control
+
+The website needs to enable the site manager to:
+
+- Update the style of the game easily
+- Be flexible to upgrading with new features in future
+
+With this in mind I have produced a short diagram representing the viability of elements versus importance within the site.
+
+<summary>Viability chart</summary>
+
+![viability](assets/readme-files/Mushroom-viability.jpg)
+</details>
+
+***
 
