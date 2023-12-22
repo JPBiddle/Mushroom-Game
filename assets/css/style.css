@@ -160,13 +160,13 @@ body {
 
 @media screen and (max-width: 700px) {
     .backgroundchange {
-        position: relative;
+        position: fixed;
         margin-left: auto;
         margin-right: auto;
         left: 0;
         right: 0;
         bottom: 0;
-        top: 40%;
+        top: 93%;
         z-index: 5;
         text-align: center;
         font-family: "Gloria Hallelujah", "sans-serif";
@@ -219,7 +219,7 @@ body {
         grid-template-rows: repeat(6, 60px);
         padding-top: 5%;
         position: fixed;
-            top: 28%;
+            top: 29%;
             left: 0;
             right: 0;
             bottom: 0;
